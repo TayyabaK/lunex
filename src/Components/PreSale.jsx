@@ -6,10 +6,6 @@ const PreSale = () => {
   return (
     <div className="bg-black [font-family:'Archivo-Bold',Helvetica]  text-white p-8 rounded-lg shadow-md">
       <div className="flex justify-between items-center">
-        {/* <div>
-          <img src="/lunex-logo.svg" alt="Lunex Logo" className="h-10" />
-          <h1 className="font-bold text-2xl">Lunex</h1>
-        </div> */}
         <div className="flex items-center ">
           <div className="flex items-center justify-center bg-cover bg-no-repeat">
             <Image
@@ -26,7 +22,6 @@ const PreSale = () => {
         </div>
         <div className="flex items-center gap-[15px]">
           <span className="font-semibold text-lg">Presale Stage</span>
-          {/* <span className="font-bold text-lg ml-2">7</span> */}
           <div className=" [font-family:'Archivo-Bold',Helvetica] font-bold text-[#34fcb4] text-[23.3px] text-center  tracking-[0] leading-[normal]">
             7
           </div>
