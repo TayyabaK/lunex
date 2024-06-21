@@ -32,7 +32,7 @@ const WhatIsLunex = () => {
         </div>
         <div className="flex flex-row justify-between md:mt-[55px] mt-[20px] h-[30px] max-w-[600px] w-full">
           <p className="[font-family:'Archivo-Medium',Helvetica] font-medium text-transparent text-2xl whitespace-nowrap">
-            <span className="text-[#34fcb4]">//</span>
+            <span className="text-[#34fcb4]"></span>
             <span className="text-[#ffffffe6]"> Cross-Chain Processing</span>
           </p>
           <img src="/assets/pentagon-eth.png" alt="social-eth" className="h-8"/>

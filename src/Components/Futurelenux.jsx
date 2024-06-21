@@ -32,7 +32,7 @@ const Futurelenux = () => {
           <div className="flex flex-row gap-[35px]">
           
             <p className=" [font-family:'Archivo-Medium',Helvetica] font-medium text-transparent text-2xl tracking-[0] leading-[44.0px] whitespace-nowrap">
-              <span className="text-[#34fcb4]">//</span>
+              <span className="text-[#34fcb4]"></span>
               <span className="text-[#ffffffe6]"> Socials</span>
             </p>
           
