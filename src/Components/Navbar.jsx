@@ -1,100 +1,182 @@
 "use client";
 import React, { useState } from "react";
-import Image from "next/image";
 
 const Navbar = () => {
-  const [active, setActive] = useState(false);
+  const [selectedTab, setSelectedTab] = useState("ECOSYSTEM");
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const tabs = [
+    { name: "ECOSYSTEM", label: "ECOSYSTEM" },
+    { name: "WIN", label: "WIN $500K" },
+    { name: "MEDIA", label: "MEDIA" },
+    { name: "HOW_TO_BUY", label: "HOW TO BUY" },
+    { name: "CALCULATOR", label: "CALCULATOR" },
+  ];
+
   return (
-    <div className="relative flex flex-row bg-black w-full justify-between px-4 py-4">
-      {/* Logo container */}
-      <div className="flex items-center md:ml-[20px] ml-[5px]">
-        <div
-          className="flex items-center justify-center bg-cover bg-no-repeat"
-          style={{
-            backgroundImage: 'url("/assets/Subtractassets.png")',
-            width: "39px",
-            height: "39px",
-          }}
-        >
-          <Image
-            src="/assets/logo.png"
-            alt="Ellipse"
-            width={50}
-            height={50}
-            className="w-11 h-21"
-          />
-        </div>
-        <div className="font-bold text-white text-lg leading-normal ml-2">
-          Lunex
-        </div>
-      </div>
-
-      {/* Navbar items container */}
-      <div className="flex flex-row items-center justify-center space-x-6">
-        {/* Sample item with icon */}
-        {/* <div className="flex items-center">
-          <div className="w-5 h-5 rounded-full border border-solid border-white"></div>
-          <div
-            className={`font-bold text-lg leading-normal ml-2 ${
-              isActive.ecosystem ? "text-[#34fcb4]" : "text-white"
-            }`}
-          >
-            ECOSYSTEM
-          </div>
-        </div> */}
-
-        {/* Repeat other items similarly */}
+    <nav className="bg-black text-white pt-4 pb-4">
+      <div className="container w-full mx-auto flex items-center justify-between">
         <div className="flex items-center">
-          <div className="w-5 h-5 rounded-full border border-solid border-white"></div>
-          <div className="font-bold text-[#34fcb4] text-lg leading-normal ml-2">
-            ECOSYSTEM
+          <img src="/assets/logo.png" alt="Logo" className="h-8 w-8 mr-1" />
+          <div className="font-bold text-white text-lg leading-normal">
+            LUNEX
           </div>
         </div>
-
-        <div className="flex items-center">
-          <div className="w-5 h-5 rounded-full border border-solid border-white"></div>
-          <div className="font-bold text-[#34fcb4] text-lg leading-normal ml-2">
-            ECOSYSTEM
+        <div className="hidden md:flex flex-grow justify-center space-x-10">
+          {tabs.map((tab) => (
+            <div
+              key={tab.name}
+              className={`px-4 py-2 cursor-pointer flex items-center ${
+                selectedTab === tab.name
+                  ? "text-green-500 border-b-2 border-green-500"
+                  : ""
+              }`}
+              onClick={() => setSelectedTab(tab.name)}
+            >
+              <span
+                className={`h-4 w-4 flex items-center justify-center rounded-full mr-2 border ${
+                  selectedTab === tab.name
+                    ? "bg-black border-white"
+                    : "bg-black border-white"
+                }`}
+              >
+                <span
+                  className={`h-2 w-2 rounded-full ${
+                    selectedTab === tab.name ? "bg-green-500" : ""
+                  }`}
+                ></span>
+              </span>
+              {tab.label}
+            </div>
+          ))}
+        </div>
+        <div className="hidden md:flex items-center mr-4">
+          <div className="relative">
+            <img
+              src="assets/flag-uk.png"
+              alt="UK Flag"
+              className="h-6 w-6 cursor-pointer"
+              onClick={() => setDropdownOpen(!dropdownOpen)}
+            />
+            {dropdownOpen && (
+              <div className="absolute right-0 mt-2 w-48 bg-white text-black rounded-md shadow-lg">
+                <div
+                  className="px-4 py-2 cursor-pointer"
+                  onClick={() => setDropdownOpen(false)}
+                >
+                  Option 1
+                </div>
+                <div
+                  className="px-4 py-2 cursor-pointer"
+                  onClick={() => setDropdownOpen(false)}
+                >
+                  Option 2
+                </div>
+              </div>
+            )}
           </div>
-        </div>
-
-        <div className="flex items-center">
-          <div className="w-5 h-5 rounded-full border border-solid border-white"></div>
-          <div className="font-bold text-[#34fcb4] text-lg leading-normal ml-2">
-            ECOSYSTEM
-          </div>
-        </div>
-
-        <div className="flex items-center">
-          <div className="w-5 h-5 rounded-full border border-solid border-white"></div>
-          <div className="font-bold text-[#34fcb4] text-lg leading-normal ml-2">
-            ECOSYSTEM
-          </div>
-        </div>
-      </div>
-
-      {/* Buy $LUNAX text */}
-      <div className="flex flex-row">
-        <div className="flex items-center">
-          <Image
-            src="/assets/flag-uk.png"
-            alt="flag"
-            width={30}
-            height={30}
-            className="w-11 h-21"
-          />{" "}
-        </div>
-        <div className="flex items-center border-[1px] md:mr-[80px] mr-[5px] p-[15px] md:ml-[30px]">
-          <div className="w-5 h-5 rounded-full border border-solid border-white ml-[-25px]"></div>
-          <div
-            className="text-lg font-bold text-white leading-normal whitespace-nowrap ml-2"
-            style={{ letterSpacing: "0.72px" }}
-          >
+          <button className="ml-4 bg-green-500 px-4 py-2 rounded-md">
             BUY $LUNAX
-          </div>
-        </div>{" "}
+          </button>
+        </div>
+        <div className="md:hidden flex items-center">
+          <button onClick={() => setMenuOpen(!menuOpen)}>
+            {menuOpen ? (
+              <svg
+                className="h-6 w-6 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            ) : (
+              <svg
+                className="h-6 w-6 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            )}
+          </button>
+        </div>
       </div>
-    </div>
+      {menuOpen && (
+        <div className="md:hidden mt-4 flex flex-col items-center space-y-4">
+          {tabs.map((tab) => (
+            <div
+              key={tab.name}
+              className={`px-4 py-2 cursor-pointer flex items-center ${
+                selectedTab === tab.name
+                  ? "text-green-500 border-b-2 border-green-500"
+                  : ""
+              }`}
+              onClick={() => {
+                setSelectedTab(tab.name);
+                setMenuOpen(false);
+              }}
+            >
+              <span
+                className={`h-4 w-4 flex items-center justify-center rounded-full mr-2 border ${
+                  selectedTab === tab.name
+                    ? "bg-black border-white"
+                    : "bg-black border-white"
+                }`}
+              >
+                <span
+                  className={`h-2 w-2 rounded-full ${
+                    selectedTab === tab.name ? "bg-green-500" : ""
+                  }`}
+                ></span>
+              </span>
+              {tab.label}
+            </div>
+          ))}
+          <div className="relative">
+            <img
+              src="assets/flag-uk.png"
+              alt="UK Flag"
+              className="h-6 w-6 cursor-pointer"
+              onClick={() => setDropdownOpen(!dropdownOpen)}
+            />
+            {dropdownOpen && (
+              <div className="absolute right-0 mt-2 w-48 bg-white text-black rounded-md shadow-lg">
+                <div
+                  className="px-4 py-2 cursor-pointer"
+                  onClick={() => setDropdownOpen(false)}
+                >
+                  Option 1
+                </div>
+                <div
+                  className="px-4 py-2 cursor-pointer"
+                  onClick={() => setDropdownOpen(false)}
+                >
+                  Option 2
+                </div>
+              </div>
+            )}
+          </div>
+         <button
+            className="bg-black border-white border-2 px-4 py-2 hover:bg-green-500 hover:border-white transition duration-300 ease-in-out"
+          >
+          BUY $LUNEX
+        </button>
+        </div>
+      )}
+    </nav>
   );
 };
 

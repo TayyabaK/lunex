@@ -2,7 +2,7 @@ import React from "react";
 
 const Brand = () => {
   return (
-    <div className="bg-black p-[50px] ">
+    <div className="bg-black p-[100px] ">
       <section>
         <div className="text-white text-center font-Archivo font-bold text-4xl tracking-widest uppercase">
           AS SEEN IN THE MEDIA

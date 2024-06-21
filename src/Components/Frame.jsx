@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import Futurelenux from "./Futurelenux";
 import Brand from "./Brand";
-import Whitepaper from "./Whitepaper";
+import WhatIsLunex from "./WhatIsLunex";
 
 export const Frame = () => {
   return (
@@ -10,7 +10,7 @@ export const Frame = () => {
       <Navbar />
       <Futurelenux />
       <Brand />
-      <Whitepaper />
+      <WhatIsLunex />
     </div>
   );
 };
