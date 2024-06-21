@@ -386,6 +386,7 @@ export const Frame = () => {
             src="ellipse-120-4.svg"
           />
         </div>
+        {/* lunex future starts here */}
         <div className="absolute w-[39px] h-[39px] top-[286px] left-[1196px] bg-[url(/subtract-3.svg)] bg-[100%_100%]">
           <img
             className="absolute w-[11px] h-[21px] top-[9px] left-5"
@@ -618,6 +619,7 @@ export const Frame = () => {
         <div className="absolute w-[70px] h-[70px] top-[13381px] left-[1584px] rounded-[35px] border border-solid border-[#2d2c2d]" />
         <div className="absolute w-[49px] h-[49px] top-[827px] left-[919px] rounded-[24.43px] border-[0.7px] border-solid border-[#2d2c2d]" />
         <div className="absolute w-[70px] h-[70px] top-[13381px] left-[1704px] rounded-[35px] border border-solid border-[#2d2c2d]" />
+        {/* lunex future ends here */}
         <p className="absolute top-[1073px] left-[686px] [font-family:'Archivo-Bold',Helvetica] font-bold text-white text-[32px] text-center tracking-[9.60px] leading-[normal] whitespace-nowrap">
           AS SEEN IN THE MEDIA
         </p>

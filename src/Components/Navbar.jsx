@@ -74,14 +74,25 @@ const Navbar = () => {
       </div>
 
       {/* Buy $LUNAX text */}
-      <div className="flex items-center">
-        <div className="w-5 h-5 rounded-full border border-solid border-white"></div>
-        <div
-          className="text-lg font-bold text-white leading-normal whitespace-nowrap ml-2"
-          style={{ letterSpacing: "0.72px" }}
-        >
-          BUY $LUNAX
+      <div className="flex flex-row">
+        <div className="flex items-center">
+          <Image
+            src="/assets/flag-uk.png"
+            alt="flag"
+            width={30}
+            height={30}
+            className="w-11 h-21"
+          />{" "}
         </div>
+        <div className="flex items-center border-[1px] md:mr-[80px] mr-[5px] p-[15px] md:ml-[30px]">
+          <div className="w-5 h-5 rounded-full border border-solid border-white ml-[-25px]"></div>
+          <div
+            className="text-lg font-bold text-white leading-normal whitespace-nowrap ml-2"
+            style={{ letterSpacing: "0.72px" }}
+          >
+            BUY $LUNAX
+          </div>
+        </div>{" "}
       </div>
     </div>
   );
