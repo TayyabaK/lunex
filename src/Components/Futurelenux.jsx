@@ -22,7 +22,7 @@ const Futurelenux = () => {
         {/* <div className=" w-[1051px] top-[1427px] left-36 [font-family:'Archivo-Bold',Helvetica] font-bold text-white text-[120px] tracking-[0] leading-[102.0px]">
         What is Lunex?
       </div> */}
-        <p className=" w-[700px] mt-[50px] [font-family:'Archivo-Medium',Helvetica] font-medium text-[#ffffffe6] text-xl tracking-[0] leading-[44.0px]">
+        <p className=" w-[700px] mt-[50px] [font-family:'Archivo-Medium',Helvetica] font-medium text-[#ffffffe6] text-xl ">
           Corvus Is A Web3 Defi Crypto Exchange That Allows Users To Buy, Sell
           And Swap Cryptocurrency Instantly Via Our Non-custodial Crypto
           Application.
