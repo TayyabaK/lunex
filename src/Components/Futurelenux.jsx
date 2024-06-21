@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Presale from "./Presale";
+import PreSale from "./PreSale";
 
 const Futurelenux = () => {
   return (
@@ -14,11 +14,9 @@ const Futurelenux = () => {
       </div> */}
       <section className="max-w-[680px] w-full">
         <p className="max-w-[650px] w-full font-bold text-transparent text-[80px] leading-none [font-family:'Archivo-Bold',Helvetica] tracking-[0]">
-  <span className="text-white">
-    Step Into the future with 
-  </span>
-  <span className="text-[#34fcb4]"> Lunex Network</span>
-</p>
+          <span className="text-white">Step Into the future with</span>
+          <span className="text-[#34fcb4]"> Lunex Network</span>
+        </p>
         {/* <div className=" w-[1051px] top-[1427px] left-36 [font-family:'Archivo-Bold',Helvetica] font-bold text-white text-[120px] tracking-[0] leading-[102.0px]">
         What is Lunex?
       </div> */}
@@ -86,7 +84,7 @@ const Futurelenux = () => {
           <div className=" max-w-[510px] w-full h-fit border-2 border-solid border-[#34fcb4]">
             <div className="max-w-[510px] w-full h-fit border-[#34fcb4] border-[1px]">
               <div className="">
-                <Presale />
+                <PreSale />
               </div>
             </div>
           </div>

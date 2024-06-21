@@ -1,7 +1,8 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 
-const Presale = () => {
+const PreSale = () => {
   return (
     <div className="bg-black [font-family:'Archivo-Bold',Helvetica]  text-white p-8 rounded-lg shadow-md">
       <div className="flex justify-between items-center">
@@ -139,4 +140,4 @@ const Presale = () => {
   );
 };
 
-export default Presale;
+export default PreSale;
