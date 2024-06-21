@@ -76,7 +76,8 @@ const Navbar = () => {
               </div>
             )}
           </div>
-          <button className="ml-4 bg-green-500 px-4 py-2 rounded-md">
+          <button className="bg-black border-green border-2 px-4 py-2 ml-10 hover:bg-green-500 hover:border-white transition duration-300 ease-in-out">
+            {" "}
             BUY $LUNAX
           </button>
         </div>
@@ -169,11 +170,9 @@ const Navbar = () => {
               </div>
             )}
           </div>
-         <button
-            className="bg-black border-white border-2 px-4 py-2 hover:bg-green-500 hover:border-white transition duration-300 ease-in-out"
-          >
-          BUY $LUNEX
-        </button>
+          <button className="bg-black border-green border-2 px-4 py-2 hover:bg-green-500 hover:border-white transition duration-300 ease-in-out">
+            BUY $LUNEX
+          </button>
         </div>
       )}
     </nav>
