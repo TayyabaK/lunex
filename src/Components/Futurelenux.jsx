@@ -4,50 +4,54 @@ import PreSale from "./PreSale";
 
 const Futurelenux = () => {
   return (
-    <div className="bg-black p-[50px] flex md:flex-row flex-col justify-center md:gap-[300px]">
-   
-      <section className="max-w-[680px] w-full">
-        <p className="max-w-[650px] w-full font-bold text-transparent text-[80px] leading-none [font-family:'Archivo-Bold',Helvetica] tracking-[0]">
-          <span className="text-white">Step Into the future with</span>
+    <div className="bg-black bg-url md:p-[100px] p-[70px] flex md:flex-row flex-col justify-center xl:gap-[90px] lg:gap-[50px] gap-[50px]">
+      <section className="max-w-[700px]  w-full">
+        <p className="max-w-[700px]  w-full font-bold text-transparent lg:text-[60px] xl:text-[85px] text-[60px] leading-none [font-family:'Archivo-Bold',Helvetica] tracking-[0]">
+          <span className="text-white">
+            Step Into the <br /> future with
+          </span>{" "}
+          <br />
           <span className="text-[#34fcb4]"> Lunex Network</span>
         </p>
-     
-        <p className=" max-w-[700px] w-full mt-[50px] [font-family:'Archivo-Medium',Helvetica] font-medium text-[#ffffffe6] text-xl ">
+
+        <p className=" max-w-[700px] w-full mt-[80px]  [font-family:'Archivo-Medium',Helvetica] font-medium text-[#ffffffe6] text-lg lg:text-xl ">
           Corvus Is A Web3 Defi Crypto Exchange That Allows Users To Buy, Sell
           And Swap Cryptocurrency Instantly Via Our Non-custodial Crypto
           Application.
         </p>
-        <div className="flex flex-row  mt-[55px] justify-between">
-         
+        <div className="flex flex-col xl:gap-0 gap-[20px] justify-center sm:flex-row max-w-[680px] w-full mt-[90px] xl:justify-between">
           <div className=" max-w-[250px] w-full h-16  mt-[-18px]">
-        
-            <button>
+            <button className="max-w-[220px] w-full py-[12px] border-solid gap-[10px] border-[#34fcb4] border-[2px] justify-center flex flex-row">
+              <h1 className="[font-family:'Archivo-Bold',Helvetica] font-bold text-white text-sm lg:text-lg flex">
+                JOIN PRESALE
+              </h1>
               <img
-                className="w-full max-w-[250px] h-[64pxpx] top-[822px] mt-[9px] left-[1208px]"
+                className="w-full max-w-[25px] h-[10px] mt-[9px]"
                 alt="Group"
-                src="/assets/Group-9213-presale.png"
-              />{" "}
+                src="/assets/Vector-arrow.png"
+              />
             </button>
           </div>
           <div className="flex flex-row gap-[35px]">
-          
-            <p className=" [font-family:'Archivo-Medium',Helvetica] font-medium text-transparent text-2xl tracking-[0] leading-[44.0px] whitespace-nowrap">
-              <span className="text-[#34fcb4]"></span>
+            <p className=" [font-family:'Archivo-Medium',Helvetica] font-medium text-transparent text-lg  whitespace-nowrap">
+              <span className="text-[#34fcb4]">
+                {String.fromCharCode(47, 47)}
+              </span>
               <span className="text-[#ffffffe6]"> Socials</span>
             </p>
-          
+
             <img
-              className=" max-w-[25px] w-full h-[25px] top-[822px] mt-[9px] left-[1208px]"
+              className=" max-w-[20px] w-full h-[20px]"
               alt="Group"
               src="/assets/VectorX-1.png"
             />
             <img
-              className=" max-w-[30px] w-full h-[25px] top-[822px] mt-[9px] left-[1208px]"
+              className=" max-w-[25px] w-full h-[20px] "
               alt="Group"
               src="/assets/Vectordiscord-5.png"
             />
             <img
-              className=" max-w-[25px] w-full h-[25px] top-[822px] mt-[9px] left-[1208px]"
+              className=" max-w-[20px] w-full h-[20px] "
               alt="Group"
               src="/assets/Vectorplane-3.png"
             />
@@ -56,9 +60,9 @@ const Futurelenux = () => {
       </section>
 
       <section>
-        <div className="max-w-[510px] w-full h-fit ">
-          <div className=" max-w-[510px] w-full h-fit border-2 border-solid border-[#34fcb4]">
-            <div className="max-w-[510px] w-full h-fit border-[#34fcb4] border-[1px]">
+        <div className="max-w-[800px] w-full h-fit ">
+          <div className=" max-w-[800px] w-full h-fit border-2 border-solid border-[#34fcb4]">
+            <div className="max-w-[800px] w-full h-fit border-[#34fcb4] border-[1px]">
               <div className="">
                 <PreSale />
               </div>

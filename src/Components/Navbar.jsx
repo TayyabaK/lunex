@@ -15,7 +15,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-black text-white pt-4 pb-4">
+    <nav className="bg-black text-white pt-4 pb-4 border-b-[0.25px] border-[#2D2C2D]">
       <div className="container w-full mx-auto flex items-center justify-between">
         <div className="flex items-center">
           <img src="/assets/logo.png" alt="Logo" className="h-8 w-8 mr-1" />
@@ -29,7 +29,7 @@ const Navbar = () => {
               key={tab.name}
               className={`px-4 py-2 cursor-pointer flex items-center ${
                 selectedTab === tab.name
-                  ? "text-green-500 border-b-2 border-green-500"
+                  ? "text-[#34FCB4] border-b-2 border-[#34FCB4] pb-3"
                   : ""
               }`}
               onClick={() => setSelectedTab(tab.name)}
@@ -43,7 +43,7 @@ const Navbar = () => {
               >
                 <span
                   className={`h-2 w-2 rounded-full ${
-                    selectedTab === tab.name ? "bg-green-500" : ""
+                    selectedTab === tab.name ? "bg-[#34FCB4]" : ""
                   }`}
                 ></span>
               </span>
@@ -76,8 +76,7 @@ const Navbar = () => {
               </div>
             )}
           </div>
-          <button className="bg-black border-green border-2 px-4 py-2 ml-10 hover:bg-green-500 hover:border-white transition duration-300 ease-in-out">
-            {" "}
+          <button className="bg-black border-[#34FCB4] border-2 px-4 py-2 ml-10 hover:bg-[#34FCB4] hover:border-white transition duration-300 ease-in-out">
             BUY $LUNAX
           </button>
         </div>
@@ -122,7 +121,7 @@ const Navbar = () => {
               key={tab.name}
               className={`px-4 py-2 cursor-pointer flex items-center ${
                 selectedTab === tab.name
-                  ? "text-green-500 border-b-2 border-green-500"
+                  ? "text-[#34FCB4] border-b-2 border-[#34FCB4] pb-3"
                   : ""
               }`}
               onClick={() => {
@@ -139,7 +138,7 @@ const Navbar = () => {
               >
                 <span
                   className={`h-2 w-2 rounded-full ${
-                    selectedTab === tab.name ? "bg-green-500" : ""
+                    selectedTab === tab.name ? "bg-[#34FCB4]" : ""
                   }`}
                 ></span>
               </span>
@@ -170,8 +169,8 @@ const Navbar = () => {
               </div>
             )}
           </div>
-          <button className="bg-black border-green border-2 px-4 py-2 hover:bg-green-500 hover:border-white transition duration-300 ease-in-out">
-            BUY $LUNEX
+          <button className="bg-black border-[#34FCB4] border-2 px-4 py-2 hover:bg-[#34FCB4] hover:border-white transition duration-300 ease-in-out">
+            BUY $LUNAX
           </button>
         </div>
       )}
