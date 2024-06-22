@@ -83,11 +83,7 @@ const Potential = () => {
           </div>
         </div>
 
-        <div style={{
-            background:
-              "radial-gradient(circle 20vh at 50% 25%, #34fcb35d, black)",
-          }}
-          className="md:max-w-[250px] max-w-[760px] w-full justify-center border-[0.5px] border-gray-700 flex p-[20px] flex-col">
+        <div className="md:max-w-[250px] max-w-[760px] w-full justify-center border-[0.5px] border-gray-700 flex p-[20px] flex-col">
           <button className="hover:w-[450px]">
             <img
               className="max-w-[250px] h-[150px] mb-[80px] w-full"
@@ -124,7 +120,7 @@ const Potential = () => {
             </button>
           </div>
           <div className="mt-[15px] w-full text-white flex flex-col">
-            <span className="font-medium text-lg">Transparancy</span>
+            <span className="font-medium text-lg">Transparency</span>
             <span className="text-xs font-light leading-5 mt-[20px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
