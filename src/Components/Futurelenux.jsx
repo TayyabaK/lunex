@@ -4,8 +4,8 @@ import PreSale from "./PreSale";
 
 const Futurelenux = () => {
   return (
-    <div className="bg-black bg-url md:p-[100px] p-[70px] flex md:flex-row flex-col justify-center xl:gap-[90px] lg:gap-[50px] gap-[50px]">
-      <section className="max-w-[700px]  w-full">
+    <div className="bg-black  bg-custom-gradient-topleft bg-no-repeat bg-top-left-half bg-half-width-height bg-no-repeat bg-url md:p-[100px] p-[70px] flex md:flex-row flex-col justify-center xl:gap-[90px] lg:gap-[50px] gap-[50px]">
+      <section className="max-w-[700px]  w-full ">
         <p className="max-w-[700px]  w-full font-bold text-transparent lg:text-[60px] xl:text-[85px] text-[60px] leading-none [font-family:'Archivo-Bold',Helvetica] tracking-[0]">
           <span className="text-white">
             Step Into the <br /> future with
@@ -21,7 +21,7 @@ const Futurelenux = () => {
         </p>
         <div className="flex flex-col xl:gap-0 gap-[20px] justify-center sm:flex-row max-w-[680px] w-full mt-[90px] xl:justify-between">
           <div className=" max-w-[250px] w-full h-16  mt-[-18px]">
-            <button class="relative neon-border neon-shadow neon-hover px-6 py-3 bg-black font-bold flex items-center transition-colors duration-300 ease-in-out">
+            <button class="relative neon-border neon-shadow neon-hover px-6 py-3 bg-black text-white font-bold flex items-center transition-colors duration-300 ease-in-out">
               <h1 className="[font-family:'Archivo-Bold',Helvetica] font-bold text-sm lg:text-lg flex">
                 JOIN PRESALE
               </h1>

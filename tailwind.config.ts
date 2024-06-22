@@ -21,7 +21,17 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        browngrey: '#2D2C2D',
+        browngrey: "#2D2C2D",
+      },
+      backgroundImage: {
+        "custom-gradient-topleft": "url('/assets/bg-top-gradient.svg')",
+        "custom-gradient-topright": "url('/assets/token-bg-grad.svg')",
+      },
+      backgroundSize: {
+        "half-width-height": "100% 50%", // Full width, half height
+      },
+      backgroundPosition: {
+        "top-left-half": "top left 0% 50%", // Start from top left, shift down by 50%
       },
     },
   },
