@@ -4,7 +4,7 @@ const WhatIsLunex = () => {
   return (
     <div className="bg-black p-[70px] md:p-[100px] flex lg:flex-row flex-col justify-center xl:gap-[170px] md:gap-[50px] gap-[50px]">
       <section className="md:pr-[150px] pr-[100px]">
-        <div className="max-w-[750px] w-full [font-family:'Archivo-Bold',Helvetica] font-bold text-white lg:text-[60px] xl:text-[80px] text-[60px]">
+        <div className="max-w-[750px] w-full [font-family:'Archivo-Bold',Helvetica] font-bold text-white lg:text-[60px] xl:text-[70px] text-[60px]">
           What is Lunex?
         </div>
         <p className="max-w-[750px] w-full [font-family:'Archivo-Medium',Helvetica] font-medium text-[#ffffffe6] text-[16px] lg:text-lg mt-4">
@@ -14,18 +14,18 @@ const WhatIsLunex = () => {
         </p>
 
         <div className="max-w-[750px] w-full flex flex-row gap-[20px] mt-[55px]">
-          <button className="max-w-[250px] w-full py-[12px] border-solid gap-[10px] border-[#34fcb4] border-[1px] justify-center flex flex-row">
-            <h1 className="[font-family:'Archivo-Bold',Helvetica] font-bold text-white text-lg flex">
+          <button class="relative neon-border neon-shadow neon-hover px-6 py-3 bg-black font-bold flex items-center transition-colors duration-300 ease-in-out">
+            <h1 className="[font-family:'Archivo-Bold',Helvetica] font-bold text-sm lg:text-lg flex">
               JOIN PRESALE
             </h1>
             <img
-              className="w-full max-w-[25px] h-[10px] mt-[9px]"
+              className="ml-2 w-4 h-2"
               alt="Group"
               src="/assets/Vector-arrow.png"
             />
           </button>
-          <button className="max-w-[250px] w-full py-[12px] border-solid border-white border-[1px] justify-center flex flex-row">
-            <h1 className="[font-family:'Archivo-Bold',Helvetica] font-bold text-white text-lg flex">
+          <button className="w-1/3 white-border white-shadow white-hover px-6 py-3 justify-center flex flex-row">
+            <h1 className="[font-family:'Archivo-Bold',Helvetica] font-bold text-lg flex">
               WHITEPAPER
             </h1>
           </button>

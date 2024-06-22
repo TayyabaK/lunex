@@ -19,7 +19,11 @@ const config: Config = {
 
   content: ["./src/**/*.{html,js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        browngrey: '#2D2C2D',
+      },
+    },
   },
   plugins: [],
 };

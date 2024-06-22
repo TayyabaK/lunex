@@ -14,19 +14,19 @@ const Futurelenux = () => {
           <span className="text-[#34fcb4]"> Lunex Network</span>
         </p>
 
-        <p className=" max-w-[700px] w-full mt-[80px]  [font-family:'Archivo-Medium',Helvetica] font-medium text-[#ffffffe6] text-lg lg:text-xl ">
+        <p className=" max-w-[700px] w-full mt-[80px]  [font-family:'Archivo-Medium',Helvetica] font-medium text-[#ffffffe6] text-lg lg:text-lg ">
           Corvus Is A Web3 Defi Crypto Exchange That Allows Users To Buy, Sell
           And Swap Cryptocurrency Instantly Via Our Non-custodial Crypto
           Application.
         </p>
         <div className="flex flex-col xl:gap-0 gap-[20px] justify-center sm:flex-row max-w-[680px] w-full mt-[90px] xl:justify-between">
           <div className=" max-w-[250px] w-full h-16  mt-[-18px]">
-            <button className="max-w-[220px] w-full py-[12px] border-solid gap-[10px] border-[#34fcb4] border-[2px] justify-center flex flex-row">
-              <h1 className="[font-family:'Archivo-Bold',Helvetica] font-bold text-white text-sm lg:text-lg flex">
+            <button class="relative neon-border neon-shadow neon-hover px-6 py-3 bg-black font-bold flex items-center transition-colors duration-300 ease-in-out">
+              <h1 className="[font-family:'Archivo-Bold',Helvetica] font-bold text-sm lg:text-lg flex">
                 JOIN PRESALE
               </h1>
               <img
-                className="w-full max-w-[25px] h-[10px] mt-[9px]"
+                className="ml-2 w-4 h-2"
                 alt="Group"
                 src="/assets/Vector-arrow.png"
               />

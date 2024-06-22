@@ -2,32 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.neon-border {
+  border: 2px solid #34fcb4;
+  color: white;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.neon-shadow {
+  box-shadow: 4px 4px 0 #34fcb4;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.neon-hover::after {
+  content: "";
+  position: absolute;
+  border: 2px solid #34fcb4;
+  transition: transform 0.3s ease-in-out;
+  color: black;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-} */
+.neon-hover:hover {
+  background-color: #34fcb4;
+  color: black;
+  box-shadow: none;
+}
+
+.white-border {
+  border: 2px solid white;
+  color: white;
+  background-color: black;
+}
+
+.white-shadow {
+  box-shadow: 4px 4px 0 white;
+}
+
+.white-hover::after {
+  content: "";
+  position: absolute;
+  border: 2px solid white;
+  transition: transform 0.3s ease-in-out;
+  color: black;
+}
+
+.white-hover:hover {
+  background-color: white;
+  color: black;
+  box-shadow: none;
+}
