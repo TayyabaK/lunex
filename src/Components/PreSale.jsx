@@ -1,10 +1,18 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 
 const PreSale = () => {
+  const [selectedPayment, setSelectedPayment] = useState("ETH");
+
+  const buttons = [
+    { label: "ETH", icon: "/assets/eth.svg", selectedBg: "bg-[#34fcb4]", defaultBg: "bg-white" },
+    { label: "USDT", icon: "/assets/usdt.png", selectedBg: "bg-[#34fcb4]", defaultBg: "bg-white" },
+    { label: "BNB", icon: "/assets/bnb.png", selectedBg: "bg-[#34fcb4]", defaultBg: "bg-white" },
+  ];
+
   return (
-    <div className="bg-black [font-family:'Archivo-Bold',Helvetica]  text-white py-[20px] px-[38px] rounded-lg shadow-md">
+    <div className="bg-black [font-family:'Archivo-Bold',Helvetica] text-white py-[20px] px-[38px] rounded-lg shadow-md">
       <div className="flex justify-between items-center">
         <div className="flex items-center ">
           <div className="flex items-center justify-center bg-cover bg-no-repeat">
@@ -18,8 +26,8 @@ const PreSale = () => {
           <div className="font-bold text-white text-md ml-2">Lunex</div>
         </div>
         <div className="flex items-center gap-[15px]">
-          <span className=" text-sm">Presale Stage</span>
-          <div className=" [font-family:'Archivo-Bold',Helvetica] font-bold text-[#34fcb4] text-[18.3px] text-center  tracking-[0] leading-[normal]">
+          <span className="text-sm">Presale Stage</span>
+          <div className="[font-family:'Archivo-Bold',Helvetica] font-bold text-[#34fcb4] text-[18.3px] text-center tracking-[0] leading-[normal]">
             7
           </div>
         </div>
@@ -27,11 +35,11 @@ const PreSale = () => {
 
       <div className="mt-[15px]">
         <div className="flex justify-between items-center">
-          <span className=" text-sm">
+          <span className="text-sm">
             1 LNX{" "}
             <span className="font-semibold text-[#34fcb4]"> = $0.040 </span>
           </span>
-          <span className=" text-sm">
+          <span className="text-sm">
             NEXT STAGE PRICE{" "}
             <span className="font-semibold text-[#34fcb4]"> = $0.058 </span>
           </span>
@@ -60,42 +68,32 @@ const PreSale = () => {
       </div>
 
       <div className="mt-[12px] flex justify-center text-[10px]">
-        <button className="bg-[#34fcb4]  hover:bg-[#30ba87] text-black py-2 md:px-[42px] px-4 rounded-md mr-4">
-          <span className="flex items-center">
-            <img
-              src="/assets/eth.svg"
-              alt="ETH Icon"
-              className="mr-2 ml-[-8px]"
-            />
-            ETH
-          </span>
-        </button>
-        <button className="bg-white  hover:bg-[#30ba87] text-[#9e9e9e] py-2 md:px-[34px] px-4 rounded-md mr-4">
-          <span className="flex items-center">
-            <img
-              src="/assets/usdt.png"
-              alt="USDT Icon"
-              className="mr-2 ml-[-8px]"
-            />
-            USDT
-          </span>
-        </button>
-        <button className="bg-white  hover:bg-[#30ba87] text-[#9e9e9e] py-2 md:px-[38px] px-4 rounded-md">
-          <span className="flex items-center">
-            <img
-              src="/assets/bnb.png"
-              alt="BNB Icon"
-              className="mr-2 ml-[-8px]"
-            />
-            BNB
-          </span>
-        </button>
+        {buttons.map((button) => (
+          <button
+            key={button.label}
+            className={`${
+              selectedPayment === button.label ? button.selectedBg : button.defaultBg
+            } hover:bg-[#30ba87] text-${
+              selectedPayment === button.label ? "black" : "#9e9e9e"
+            } py-2 md:px-[42px] px-4 rounded-md mr-4`}
+            onClick={() => setSelectedPayment(button.label)}
+          >
+            <span className="flex items-center text-black">
+              <img
+                src={button.icon}
+                alt={`${button.label} Icon`}
+                className="mr-2 ml-[-8px]"
+              />
+              {button.label}
+            </span>
+          </button>
+        ))}
       </div>
 
       <div className="mt-[15px]">
         <div className="flex justify-between items-center">
           <span className="font-normal text-[10px]">
-            Amount Of <span className="font-bold"> ETH </span>You Receive
+            Amount Of <span className="font-bold"> {selectedPayment} </span>You Receive
           </span>
           <span className="flex items-center">
             <img src="/assets/eth-blue.png" alt="ETH Icon" className="mr-2" />
@@ -104,16 +102,16 @@ const PreSale = () => {
         <div className="mt-[3px] flex flex-row bg-white border border-gray-700 rounded-md w-full focus:outline-none focus:border-[#34fcb4]">
           <input
             type="text"
-            className="bg-white border-none text-black placeholder:text-[12px]  rounded-md sm:py-2 sm:px-3 py-1 px-2 max-w-[83%] w-full focus:outline-none focus:border-[#34fcb4] "
+            className="bg-white border-none text-black placeholder:text-[12px] rounded-md sm:py-2 sm:px-3 py-1 px-2 max-w-[83%] w-full focus:outline-none focus:border-[#34fcb4]"
             placeholder="Enter Amount"
           />
-          <button className="bg-[#34fcb4] sm:px-[15px] px-[8px] mt-[4px] mb-[4px] mr-[5px] rounded-md  text-black text-[12px] font-semibold">
+          <button className="bg-[#34fcb4] sm:px-[15px] px-[8px] mt-[4px] mb-[4px] mr-[5px] rounded-md text-black text-[12px] font-semibold">
             MAX
           </button>
         </div>
         <div className="mt-[12px] flex justify-between items-center">
           <span className="font-normal text-[10px]">
-            Amount Of <span className="font-bold "> LNEX </span>You Receive
+            Amount Of <span className="font-bold"> LNEX </span>You Receive
           </span>
           <span className="flex items-center">
             <img
@@ -123,17 +121,17 @@ const PreSale = () => {
             />
           </span>
         </div>
-        <div className="mt-[3px] bg-white border border-gray-700 rounded-md w-full focus:outline-none focus:border-[#34fcb4] ">
+        <div className="mt-[3px] bg-white border border-gray-700 rounded-md w-full focus:outline-none focus:border-[#34fcb4]">
           <input
             type="text"
-            className="bg-white border text-black placeholder:text-[12px] border-gray-700 rounded-md sm:py-2 sm:px-3 py-1 px-2 w-full focus:outline-none focus:border-[#34fcb4] "
+            className="bg-white border text-black placeholder:text-[12px] border-gray-700 rounded-md sm:py-2 sm:px-3 py-1 px-2 w-full focus:outline-none focus:border-[#34fcb4]"
             placeholder="0"
           />
         </div>
       </div>
 
       <div className="mt-2">
-        <button className="bg-[#34fcb4]  hover:bg-[#30ba87] text-black font-bold py-2 px-6 rounded-md w-full">
+        <button className="bg-[#34fcb4] hover:bg-[#30ba87] text-black font-bold py-2 px-6 rounded-md w-full">
           Connect Wallet
         </button>
       </div>
@@ -141,7 +139,7 @@ const PreSale = () => {
       <div className="mt-6 flex justify-start items-center">
         <span className="flex items-center gap-[10px] text-[9px]">
           <img
-            className=" w-[15px] h-[15px]"
+            className="w-[15px] h-[15px]"
             alt="Group"
             src="/assets/Group-3.png"
           />
