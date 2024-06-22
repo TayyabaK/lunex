@@ -2,7 +2,7 @@ import React from "react";
 
 const Potential = () => {
   return (
-    <div className="bg-black ">
+    <div className="bg-black">
       <section>
         <div className="flex flex-col sm:flex-row gap-[10px] sm:gap-[25px] px-[70px] justify-center items-center">
           <div className="flex items-center mt-[60px]">
@@ -34,8 +34,8 @@ const Potential = () => {
           <div className="mt-[15px] w-full text-white flex flex-col">
             <span className="font-medium text-lg">Secure Transaction</span>
             <span className="text-xs font-light leading-5 mt-[20px]">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam
             </span>
           </div>
@@ -55,8 +55,8 @@ const Potential = () => {
           <div className="mt-[15px] w-full text-white flex flex-col">
             <span className="font-medium text-lg">Reward Program</span>
             <span className="text-xs font-light leading-5 mt-[20px]">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam
             </span>
           </div>
@@ -76,8 +76,8 @@ const Potential = () => {
           <div className="mt-[15px] w-full text-white flex flex-col">
             <span className="font-medium text-lg">Lower Fees</span>
             <span className="text-xs font-light leading-5 mt-[20px]">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam
             </span>
           </div>
@@ -100,9 +100,9 @@ const Potential = () => {
             <span className="font-medium text-[#34fcb4] text-lg">
               Decentralized Governance
             </span>
-            <span className="text-xs font-light leading-5 mt-[3px]">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            <span className="text-xs font-light leading-5 mt-[20px]">
+              &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam
             </span>
           </div>
@@ -122,8 +122,8 @@ const Potential = () => {
           <div className="mt-[15px] w-full text-white flex flex-col">
             <span className="font-medium text-lg">Transparancy</span>
             <span className="text-xs font-light leading-5 mt-[20px]">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam
             </span>
           </div>

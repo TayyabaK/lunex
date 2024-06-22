@@ -4,7 +4,12 @@ import PreSale from "./PreSale";
 
 const Futurelenux = () => {
   return (
-    <div className="bg-black  bg-custom-gradient-topleft bg-no-repeat bg-top-left-half bg-half-width-height bg-no-repeat bg-url md:p-[100px] p-[70px] flex md:flex-row flex-col justify-center xl:gap-[90px] lg:gap-[50px] gap-[50px]">
+    <div
+      style={{
+        background: "radial-gradient(circle 50vh at 0% 5%, #34fcb4, black)",
+      }}
+      className="bg-url md:p-[100px] p-[70px] flex md:flex-row flex-col justify-center xl:gap-[90px] lg:gap-[50px] gap-[50px]"
+    >
       <section className="max-w-[700px]  w-full ">
         <p className="max-w-[700px]  w-full font-bold text-transparent lg:text-[60px] xl:text-[85px] text-[60px] leading-none [font-family:'Archivo-Bold',Helvetica] tracking-[0]">
           <span className="text-white">
