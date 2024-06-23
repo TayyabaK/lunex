@@ -6,7 +6,7 @@ const Futurelenux = () => {
   return (
     <div
       style={{
-        background: "radial-gradient(circle 50vh at 0% 5%, #273b1d, black)",
+        background: "radial-gradient(circle 50vh at 10% 5%, #273b1d, black)",
       }}
       className="bg-url md:p-[100px] p-[70px] flex md:flex-row flex-col justify-center xl:gap-[90px] lg:gap-[50px] gap-[50px]"
     >
