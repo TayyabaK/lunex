@@ -8,13 +8,11 @@ import Potential from "./Potential";
 export const Frame = () => {
   return (
     <div>
-      <div className="w-full bg-custom-gradient-topleft">
-        <Navbar />
-        <Futurelenux />
-      </div>
+      <Navbar />
+      <Futurelenux />
       <Brand />
       <WhatIsLunex />
-      <Potential/>
+      <Potential />
     </div>
   );
 };

@@ -12,7 +12,8 @@ const PreSale = () => {
   ];
 
   return (
-    <div className="bg-black [font-family:'Archivo-Bold',Helvetica] text-white py-[20px] px-[38px] rounded-lg shadow-md">
+    <div
+     className="bg-black [font-family:'Archivo-Bold',Helvetica] text-white py-[20px] px-[38px] rounded-lg shadow-md">
       <div className="flex justify-between items-center">
         <div className="flex items-center ">
           <div className="flex items-center justify-center bg-cover bg-no-repeat">
