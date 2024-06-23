@@ -74,7 +74,13 @@ const Futurelenux = () => {
 
       <section>
         <div className="max-w-[800px] w-full h-fit ">
-          <div className=" max-w-[800px] w-full h-fit border-2 border-solid border-[#34fcb4]">
+          <div
+            className=" max-w-[800px] w-full h-fit border-1 border-solid border-[#34fcb4]"
+            style={{
+              boxShadow: "6px 6px 0 black, 7px 7px 0 #34fcb4",
+              color: "transparent",
+            }}
+          >
             <div className="max-w-[800px] w-full h-fit border-[#34fcb4] border-[1px]">
               <div className="">
                 <PreSale />
