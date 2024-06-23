@@ -5,20 +5,26 @@ import PreSale from "./PreSale";
 const Futurelenux = () => {
   return (
     <div
-        style={{
-        background: "radial-gradient(circle 50vh at 10% 5%, #273b1d, transparent), radial-gradient(circle 50vh at 90% 5%, #273b1d, transparent), black",
+      style={{
+        background:
+          "radial-gradient(circle 50vh at 10% 5%, #273b1d, transparent), radial-gradient(circle 50vh at 90% 5%, #273b1d, transparent), black",
       }}
-      className="md:p-[100px] p-[70px] flex md:flex-row flex-col justify-center xl:gap-[90px] lg:gap-[50px] gap-[50px]"
+      className="md:p-[100px] p-[70px] flex md:flex-row flex-col justify-center xl:gap-[90px] lg:gap-[50px] gap-[50px] "
     >
       <div>
         <section className="max-w-[700px]  w-full ">
-          <p className="max-w-[700px]  w-full font-bold text-transparent lg:text-[60px] xl:text-[85px] text-[60px] leading-none [font-family:'Archivo-Bold',Helvetica] tracking-[0]">
-            <span className="text-white">
-              Step Into the <br /> future with
-            </span>{" "}
-            <br />
-            <span className="text-[#34fcb4]"> Lunex Network</span>
-          </p>
+          <div className="max-w-[700px] w-full font-bold text-transparent lg:text-[60px] xl:text-[75px] text-[56px] leading-none [font-family:'Archivo-Bold',Helvetica] tracking-[0] display-flex flex-wrap-nowrap">
+            <span className="text-white display-inline my-[-20px]">
+              Step Into the{" "}
+            </span>
+            <span className="text-white display-inline my-[-20px]">
+              future with{" "}
+            </span>
+            <span className="text-[#34fcb4] display-inline my-[-20px]">
+              {" "}
+              Lunex Network
+            </span>
+          </div>
 
           <p className=" max-w-[700px] w-full mt-[80px]  [font-family:'Archivo-Medium',Helvetica] font-medium text-[#ffffffe6] text-lg lg:text-lg ">
             Corvus Is A Web3 Defi Crypto Exchange That Allows Users To Buy, Sell
