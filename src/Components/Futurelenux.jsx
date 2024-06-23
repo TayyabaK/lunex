@@ -13,25 +13,23 @@ const Futurelenux = () => {
     >
       <div>
         <section className="max-w-[700px]  w-full ">
-          <div className="max-w-[700px] w-full font-bold text-transparent lg:text-[60px] xl:text-[75px] text-[56px] leading-none [font-family:'Archivo-Bold',Helvetica] tracking-[0] display-flex flex-wrap-nowrap">
-            <span className="text-white display-inline my-[-20px]">
-              Step Into the{" "}
-            </span>
-            <span className="text-white display-inline my-[-20px]">
-              future with{" "}
-            </span>
-            <span className="text-[#34fcb4] display-inline my-[-20px]">
-              {" "}
-              Lunex Network
-            </span>
-          </div>
+          <div className="max-w-[700px] w-full font-bold text-transparent lg:text-[60px] xl:text-[82px] text-[56px] leading-none [font-family:'Archivo-Bold',Helvetica] tracking-[0] flex flex-col">
+            <div className="text-white my-[-5px]">Step Into the </div>
+            <div className="text-white my-[-5px]">future with </div>
+            <div className="text-[#34fcb4] my-[-5px]"> Lunex Network</div>
 
-          <p className=" max-w-[700px] w-full mt-[80px]  [font-family:'Archivo-Medium',Helvetica] font-medium text-[#ffffffe6] text-lg lg:text-lg ">
-            Corvus Is A Web3 Defi Crypto Exchange That Allows Users To Buy, Sell
-            And Swap Cryptocurrency Instantly Via Our Non-custodial Crypto
-            Application.
-          </p>
-          <div className="flex flex-col xl:gap-0 gap-[20px] justify-center sm:flex-row max-w-[680px] w-full mt-[90px] xl:justify-between">
+            <p
+              style={{
+                lineHeight: "50px",
+              }}
+              class="max-w-[750px] w-full font-archivo-medium font-medium text-white text-[16px] lg:text-lg mt-8"
+            >
+              Corvus Is A Web3 Defi Crypto Exchange That Allows Users To Buy,
+              Sell And Swap Cryptocurrency Instantly Via Our Non-custodial
+              Crypto Application.
+            </p>
+          </div>
+          <div className="flex flex-col xl:gap-0 gap-[20px] justify-center sm:flex-row max-w-[680px] w-full mt-[60px] xl:justify-between">
             <div className=" max-w-[250px] w-full h-16  mt-[-18px]">
               <button class="relative neon-border neon-shadow neon-hover px-6 py-3 bg-black text-white font-bold flex items-center transition-colors duration-300 ease-in-out">
                 <h1 className="[font-family:'Archivo-Bold',Helvetica] font-bold text-sm lg:text-lg flex">

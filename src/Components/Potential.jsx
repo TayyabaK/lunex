@@ -100,7 +100,7 @@ const Potential = () => {
             <span className="font-medium text-[#34fcb4] text-lg">
               Decentralized Governance
             </span>
-            <span className="text-xs font-light leading-5 mt-[20px]">
+            <span className="text-xs font-light leading-5 mt-[1px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam
@@ -129,7 +129,6 @@ const Potential = () => {
           </div>
         </div>
       </section>
-      <div className="bg-black h-[600px] w-full"></div>
     </div>
   );
 };

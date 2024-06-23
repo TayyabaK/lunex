@@ -4,6 +4,7 @@ import Futurelenux from "./Futurelenux";
 import Brand from "./Brand";
 import WhatIsLunex from "./WhatIsLunex";
 import Potential from "./Potential";
+import Exchange from "./Exchange";
 
 export const Frame = () => {
   return (
@@ -13,6 +14,7 @@ export const Frame = () => {
       <Brand />
       <WhatIsLunex />
       <Potential />
+      <Exchange/>
     </div>
   );
 };
