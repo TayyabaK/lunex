@@ -28,15 +28,15 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between px-4 md:px-6 lg:px-8">
         <div className="flex items-center">
           <img src="/assets/logo.png" alt="Logo" className="h-8 w-8 mr-1" />
-          <div className="font-bold text-white text-lg leading-normal">
-            LUNEX
+          <div className="font-bold text-white text-xl pl-2 leading-normal">
+            Lunex
           </div>
         </div>
         <div className="hidden md:flex flex-grow justify-center space-x-4 lg:space-x-4">
           {tabs.map((tab) => (
             <div
               key={tab.name}
-              className={`px-4 py-2 cursor-pointer flex items-center text-sm ${
+              className={`px-4 py-2 cursor-pointer flex items-center text-xs font-bold ${
                 selectedTab === tab.name ? "text-[#34FCB4] relative" : ""
               }`}
               onClick={() => setSelectedTab(tab.name)}
@@ -118,11 +118,11 @@ const Navbar = () => {
               </div>
             )}
           </div>
-          <button className="relative neon-border px-6 py-2 flex items-center text-white font-bold transition-colors duration-300 ease-in-out hover:bg-[#34fcb4] hover:text-black">
+          <button className="relative neon-border py-2 px-8 flex items-center text-white font-bold transition-colors duration-300 ease-in-out hover:bg-[#34fcb4] hover:text-black">
             <span className="absolute left-0 ml-[-12px] flex items-center justify-center w-5 h-5 bg-black border border-white rounded-full neon-circle">
               <span className="w-2 h-2 bg-[#34fcb4] rounded-full"></span>
             </span>
-            <span className="ml-6">BUY $LUNAX</span>
+            <span>BUY $LUNAX</span>
           </button>
         </div>
         <div className="md:hidden flex items-center">
