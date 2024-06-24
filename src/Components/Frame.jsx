@@ -7,7 +7,7 @@ import WhatIsLunex from "./WhatIsLunex";
 import Potential from "./Potential";
 import Exchange from "./Exchange";
 
-export const Frame = () => {
+ const Frame = () => {
   const [clientSideData, setClientSideData] = useState(null);
 
   useEffect(() => {
@@ -24,3 +24,5 @@ export const Frame = () => {
     </div>
   );
 };
+
+export default Frame;
