@@ -24,21 +24,21 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-black text-white pt-4 pb-4 border-b-[0.25px] border-browngrey">
-      <div className="container mx-auto flex items-center justify-between px-4 md:px-6 lg:px-8">
+    <nav className="bg-black text-white py-8 border-b-[0.25px] border-browngrey">
+      <div className="container mx-auto flex items-center justify-between px-16 ">
         <div className="flex items-center">
           <img src="/assets/logo.png" alt="Logo" className="h-8 w-8 mr-1" />
           <div className="font-bold text-white text-lg leading-normal">
             LUNEX
           </div>
         </div>
-        <div className="hidden md:flex flex-grow justify-center space-x-4 lg:space-x-10">
+        <div className="hidden md:flex flex-grow justify-center space-x-4 lg:space-x-4">
           {tabs.map((tab) => (
             <div
               key={tab.name}
               className={`px-4 py-2 cursor-pointer flex items-center text-sm ${
                 selectedTab === tab.name
-                  ? "text-[#34FCB4] border-b-2 border-[#34FCB4] pb-3"
+                  ? "text-[#34FCB4] border-b-2 border-[#34FCB4] pb-3 mb-[-2px]"
                   : ""
               }`}
               onClick={() => setSelectedTab(tab.name)}
@@ -61,10 +61,19 @@ const Navbar = () => {
           ))}
         </div>
         <div className="hidden md:flex items-center space-x-4 lg:space-x-10">
-          <div className="relative flex items-center cursor-pointer" onClick={() => setDropdownOpen(!dropdownOpen)}>
-            <img src={selectedCountry.flag} alt={selectedCountry.label} className="h-6 w-6" />
+          <div
+            className="relative flex items-center cursor-pointer"
+            onClick={() => setDropdownOpen(!dropdownOpen)}
+          >
+            <img
+              src={selectedCountry.flag}
+              alt={selectedCountry.label}
+              className="h-6 w-6"
+            />
             <svg
-              className={`h-4 w-4 ml-1 transition-transform duration-200 ${dropdownOpen ? "transform rotate-180" : ""}`}
+              className={`h-4 w-4 ml-1 transition-transform duration-200 ${
+                dropdownOpen ? "transform rotate-180" : ""
+              }`}
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -81,23 +90,38 @@ const Navbar = () => {
               <div className="absolute right-0 mt-2 w-48 bg-white text-black rounded-md shadow-lg">
                 <div
                   className="px-4 py-2 cursor-pointer flex items-center"
-                  onClick={() => handleCountrySelect("assets/flag-uk.png", "United Kingdom")}
+                  onClick={() =>
+                    handleCountrySelect("assets/flag-uk.png", "United Kingdom")
+                  }
                 >
-                  <img src="assets/flag-uk.png" alt="UK Flag" className="h-6 w-6 mr-2" />
+                  <img
+                    src="assets/flag-uk.png"
+                    alt="UK Flag"
+                    className="h-6 w-6 mr-2"
+                  />
                   United Kingdom
                 </div>
                 <div
                   className="px-4 py-2 cursor-pointer flex items-center"
-                  onClick={() => handleCountrySelect("assets/flag-usa.png", "USA")}
+                  onClick={() =>
+                    handleCountrySelect("assets/flag-usa.png", "USA")
+                  }
                 >
-                  <img src="assets/flag-usa.png" alt="USA Flag" className="h-6 w-6 mr-2" />
+                  <img
+                    src="assets/flag-usa.png"
+                    alt="USA Flag"
+                    className="h-6 w-6 mr-2"
+                  />
                   USA
                 </div>
               </div>
             )}
           </div>
-          <button className="bg-black border-[#34FCB4] border-2 px-4 py-2 hover:bg-[#34FCB4] hover:border-black hover:text-black transition duration-300 ease-in-out">
-            BUY $LUNAX
+          <button class="relative neon-border px-4 py-2 mx-8flex items-center text-white font-bold transition-colors duration-300 ease-in-out hover:bg-[#34fcb4] hover:text-black">
+            <span class="absolute left-0 ml-[-12px] flex items-center justify-center w-5 h-5 bg-black border border-white rounded-full neon-circle">
+              <span class="w-2 h-2 bg-[#34fcb4] rounded-full"></span>
+            </span>
+            <span class="ml-6">BUY $LUNAX</span>
           </button>
         </div>
         <div className="md:hidden flex items-center">
@@ -141,7 +165,7 @@ const Navbar = () => {
               key={tab.name}
               className={`px-4 py-2 cursor-pointer flex items-center text-sm ${
                 selectedTab === tab.name
-                  ? "text-[#34FCB4] border-b-2 border-[#34FCB4] pb-3"
+                  ? "text-[#34FCB4] border-b-2 border-[#34FCB4] pb-3 mb-[-2px]"
                   : ""
               }`}
               onClick={() => {
@@ -165,10 +189,19 @@ const Navbar = () => {
               {tab.label}
             </div>
           ))}
-          <div className="relative flex items-center cursor-pointer" onClick={() => setDropdownOpen(!dropdownOpen)}>
-            <img src={selectedCountry.flag} alt={selectedCountry.label} className="h-6 w-6" />
+          <div
+            className="relative flex items-center cursor-pointer"
+            onClick={() => setDropdownOpen(!dropdownOpen)}
+          >
+            <img
+              src={selectedCountry.flag}
+              alt={selectedCountry.label}
+              className="h-6 w-6"
+            />
             <svg
-              className={`h-4 w-4 ml-1 transition-transform duration-200 ${dropdownOpen ? "transform rotate-180" : ""}`}
+              className={`h-4 w-4 ml-1 transition-transform duration-200 ${
+                dropdownOpen ? "transform rotate-180" : ""
+              }`}
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -185,22 +218,34 @@ const Navbar = () => {
               <div className="absolute right-0 mt-2 w-48 bg-white text-black rounded-md shadow-lg">
                 <div
                   className="px-4 py-2 cursor-pointer flex items-center"
-                  onClick={() => handleCountrySelect("assets/flag-uk.png", "United Kingdom")}
+                  onClick={() =>
+                    handleCountrySelect("assets/flag-uk.png", "United Kingdom")
+                  }
                 >
-                  <img src="assets/flag-uk.png" alt="UK Flag" className="h-6 w-6 mr-2" />
+                  <img
+                    src="assets/flag-uk.png"
+                    alt="UK Flag"
+                    className="h-6 w-6 mr-2"
+                  />
                   United Kingdom
                 </div>
                 <div
                   className="px-4 py-2 cursor-pointer flex items-center"
-                  onClick={() => handleCountrySelect("assets/flag-usa.png", "USA")}
+                  onClick={() =>
+                    handleCountrySelect("assets/flag-usa.png", "USA")
+                  }
                 >
-                  <img src="assets/flag-usa.png" alt="USA Flag" className="h-6 w-6 mr-2" />
+                  <img
+                    src="assets/flag-usa.png"
+                    alt="USA Flag"
+                    className="h-6 w-6 mr-2"
+                  />
                   USA
                 </div>
               </div>
             )}
           </div>
-          <button className="bg-black border-[#34FCB4] border-2 px-4 py-2 hover:bg-[#34FCB4] hover:border-white hover:text-black transition duration-300 ease-in-out">
+          <button className="bg-black border-[#34FCB4] border-[1px] px-4 py-2 hover:bg-[#34FCB4] hover:border-white hover:text-black transition duration-300 ease-in-out">
             BUY $LUNAX
           </button>
         </div>
