@@ -35,7 +35,7 @@ const Navbar = () => {
         </div>
         <div className="hidden md:flex flex-grow justify-center space-x-10 lg:space-x-10">
           {tabs.map((tab) => (
-            <Link href={tab.page}>
+            <Link href={tab.page} key={tab.name}>
             <div
               key={tab.name}
               className={`px-4 py-2 cursor-pointer flex items-center text-xs font-bold ${
