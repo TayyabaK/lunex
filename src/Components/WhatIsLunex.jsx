@@ -3,7 +3,7 @@ import React from "react";
 const WhatIsLunex = () => {
   return (
     <div className="bg-black p-[70px] md:p-[100px] flex lg:flex-row flex-col justify-center xl:gap-[170px] md:gap-[50px] gap-[50px]">
-      <section className="md:pr-[150px] pr-[100px]">
+      <div className="md:pr-[150px] pr-[100px]">
         <div className="max-w-[750px] w-full [font-family:'Archivo-Bold',Helvetica] font-bold text-white lg:text-[60px] xl:text-[70px] text-[60px]">
           What is Lunex?
         </div>
@@ -51,11 +51,11 @@ const WhatIsLunex = () => {
           <img src="/assets/red-mount.svg" alt="social-red" className="h-6" />
           <img src="/assets/solana.svg" alt="social-solana" className="h-6" />
         </div>
-      </section>
+      </div>
 
-      <section className="md:mt-0 mt-8 lg:mr-[100px]">
+      <div className="md:mt-0 mt-8 lg:mr-[100px]">
         <img src="/assets/whitepaper-mob.svg" alt="mob" className="w-full" />
-      </section>
+      </div>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import React from "react";
 const Potential = () => {
   return (
     <div className="bg-black">
-      <section>
+      <div>
         <div className="flex flex-col sm:flex-row gap-[10px] sm:gap-[25px] px-[70px] justify-center items-center">
           <div className="flex items-center mt-[60px]">
             <span className="text-[#34fcb4] text-xl [font-family:'Archivo-Medium',Helvetica] font-medium">
@@ -18,8 +18,8 @@ const Potential = () => {
             Unlimited Potential
           </span>
         </div>
-      </section>
-      <section className="flex md:flex-row flex-col md:gap-0 gap-[20px] mt-[15px] self-center justify-center md:justify-center p-[20px]">
+      </div>
+      <div className="flex md:flex-row flex-col md:gap-0 gap-[20px] mt-[15px] self-center justify-center md:justify-center p-[20px]">
         <div className="md:max-w-[250px] max-w-[760px] w-full justify-center border-[0.5px] border-gray-700 flex p-[20px] flex-col">
           <img
             className="max-w-[100px] h-[150px] mb-[80px] w-full"
@@ -128,7 +128,7 @@ const Potential = () => {
             </span>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 };

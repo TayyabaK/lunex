@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";
 
 const Navbar = () => {
   const [selectedTab, setSelectedTab] = useState("ECOSYSTEM");
@@ -11,11 +12,11 @@ const Navbar = () => {
   });
 
   const tabs = [
-    { name: "ECOSYSTEM", label: "ECOSYSTEM" },
-    { name: "WIN", label: "WIN $500K" },
-    { name: "MEDIA", label: "MEDIA" },
-    { name: "HOW_TO_BUY", label: "HOW TO BUY" },
-    { name: "CALCULATOR", label: "CALCULATOR" },
+    { name: "ECOSYSTEM", label: "ECOSYSTEM", page: "/" },
+    { name: "WIN", label: "WIN $500K", page: "/Frame1" },
+    { name: "MEDIA", label: "MEDIA", page: "/" },
+    { name: "HOW_TO_BUY", label: "HOW TO BUY", page: "/Howtobuy" },
+    { name: "CALCULATOR", label: "CALCULATOR", page: "/Calculator" },
   ];
 
   const handleCountrySelect = (flag, label) => {
@@ -34,6 +35,7 @@ const Navbar = () => {
         </div>
         <div className="hidden md:flex flex-grow justify-center space-x-10 lg:space-x-10">
           {tabs.map((tab) => (
+            <Link href={tab.page}>
             <div
               key={tab.name}
               className={`px-4 py-2 cursor-pointer flex items-center text-xs font-bold ${
@@ -54,12 +56,14 @@ const Navbar = () => {
                   }`}
                 ></span>
               </span>
-              {tab.label}
-              {selectedTab === tab.name && (
-                <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#34FCB4] z-index-1 mb-[-40px]"></span>
-              )}
+                {tab.label}
+                {selectedTab === tab.name && (
+                  <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#34FCB4] z-index-1 mb-[-40px]"></span>
+                )}
             </div>
+            </Link>
           ))}
+          
         </div>
         <div className="hidden md:flex items-center space-x-4 lg:space-x-10">
           <div

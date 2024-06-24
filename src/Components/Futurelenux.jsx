@@ -12,7 +12,7 @@ const Futurelenux = () => {
       className="md:p-[100px] p-[70px] flex md:flex-row flex-col justify-center xl:gap-[90px] lg:gap-[50px] gap-[50px] "
     >
       <div>
-        <section className="max-w-[700px]  w-full ">
+        <div className="max-w-[700px]  w-full ">
           <div className="max-w-[700px] w-full font-bold text-transparent lg:text-[60px] xl:text-[82px] text-[56px] leading-none [font-family:'Archivo-Bold',Helvetica] tracking-[0] flex flex-col">
             <div className="text-white my-[-5px]">Step Into the </div>
             <div className="text-white my-[-5px]">future with </div>
@@ -67,10 +67,10 @@ const Futurelenux = () => {
               />
             </div>
           </div>
-        </section>
+        </div>
       </div>
 
-      <section>
+      <div>
         <div className="max-w-[800px] w-full h-fit ">
           <div
             className=" max-w-[800px] w-full h-fit border-1 border-solid border-[#34fcb4]"
@@ -86,7 +86,7 @@ const Futurelenux = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 };
