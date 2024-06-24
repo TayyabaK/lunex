@@ -8,12 +8,8 @@ import Potential from "./Potential";
 import Exchange from "./Exchange";
 
  const Frame = () => {
-  const [clientSideData, setClientSideData] = useState(null);
 
-  useEffect(() => {
-    setClientSideData("Dynamic Content");
-  }, []);
-
+ 
   return (
     <div>
       <Futurelenux />

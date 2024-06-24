@@ -1,6 +1,5 @@
 // pages/index.js
-import Layout from "./layout";
-import  Frame  from "@/components/Frame";
+import  Frame  from "../components/Frame";
 
 const HomePage = () => {
 
