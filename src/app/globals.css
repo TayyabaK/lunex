@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+body{
+  background-color: black;
+}
+
 .neon-border {
   border: 1px solid #34fcb4;
   color: white;

@@ -24,7 +24,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-black text-white py-8 border-b-[0.25px] border-browngrey relative z-index-0">
+    <div className="bg-black text-white py-8 mr-[64px]  ml-[44px] border-b-[0.25px] border-browngrey relative z-index-0">
       <div className="container mx-auto flex items-center justify-between px-4 md:px-6 lg:px-8">
         <div className="flex items-center">
           <img src="/assets/logo.png" alt="Logo" className="h-8 w-8 mr-1" />
@@ -118,7 +118,7 @@ const Navbar = () => {
               </div>
             )}
           </div>
-          <button className="relative neon-border px-6 py-2 mr-[22px] flex items-center text-white font-bold transition-colors duration-300 ease-in-out hover:bg-[#34fcb4] hover:text-black">
+          <button className="relative neon-border px-6 py-2 flex items-center text-white font-bold transition-colors duration-300 ease-in-out hover:bg-[#34fcb4] hover:text-black">
             <span className="absolute left-0 ml-[-12px] flex items-center justify-center w-5 h-5 bg-black border border-white rounded-full neon-circle">
               <span className="w-2 h-2 bg-[#34fcb4] rounded-full"></span>
             </span>
