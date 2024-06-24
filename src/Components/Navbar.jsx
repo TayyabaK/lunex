@@ -32,7 +32,7 @@ const Navbar = () => {
             Lunex
           </div>
         </div>
-        <div className="hidden md:flex flex-grow justify-center space-x-4 lg:space-x-4">
+        <div className="hidden md:flex flex-grow justify-center space-x-10 lg:space-x-10">
           {tabs.map((tab) => (
             <div
               key={tab.name}
