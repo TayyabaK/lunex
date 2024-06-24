@@ -1,5 +1,5 @@
 // pages/index.js
-import  Frame  from "../components/Frame";
+import  Frame  from "../Components/Frame";
 
 const HomePage = () => {
 
