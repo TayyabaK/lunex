@@ -1,7 +1,6 @@
 import React  from "react";
 import Navbar from "@/Components/Navbar";
 import "./globals.css";
-import { Frame } from "@/components/Frame";
 
 const Layout = ({ children }) => {
 
