@@ -24,7 +24,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-black text-white py-6 border-b-[0.25px] border-browngrey relative z-index-0">
+    <div className="bg-black text-white py-8 border-b-[0.25px] border-browngrey relative z-index-0">
       <div className="container mx-auto flex items-center justify-between px-4 md:px-6 lg:px-8">
         <div className="flex items-center">
           <img src="/assets/logo.png" alt="Logo" className="h-8 w-8 mr-1" />
@@ -56,7 +56,7 @@ const Navbar = () => {
               </span>
               {tab.label}
               {selectedTab === tab.name && (
-                <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#34FCB4] z-index-1 mb-[-30px]"></span>
+                <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#34FCB4] z-index-1 mb-[-40px]"></span>
               )}
             </div>
           ))}
