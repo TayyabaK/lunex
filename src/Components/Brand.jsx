@@ -18,7 +18,7 @@ const Brand = () => {
             <img src="/assets/Group-15-brand.png" alt="brand1" height={60} />
           </div>
           <div className="max-w-[180px] w-full ">
-            <img src="/assets/Grosup-12-brand.png" alt="brand1" height={80} />
+            <img src="/assets/Group-12-brand.png" alt="brand1" height={80} />
           </div>
           <div className="max-w-[180px] w-full ">
             <img src="/assets/Group-13-brand.png" alt="brand1" height={100} />{" "}
