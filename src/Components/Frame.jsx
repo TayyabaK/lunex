@@ -6,10 +6,9 @@ import Brand from "./Brand";
 import WhatIsLunex from "./WhatIsLunex";
 import Potential from "./Potential";
 import Exchange from "./Exchange";
+import Noncustodial from "./Noncustodial";
 
- const Frame = () => {
-
- 
+const Frame = () => {
   return (
     <div>
       <Futurelenux />
@@ -17,6 +16,7 @@ import Exchange from "./Exchange";
       <WhatIsLunex />
       <Potential />
       <Exchange />
+      <Noncustodial />
     </div>
   );
 };
