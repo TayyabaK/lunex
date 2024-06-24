@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <div className="bg-black text-white py-8 mr-[64px]  ml-[44px] border-b-[0.25px] border-browngrey relative z-index-0">
       <div className="container mx-auto flex items-center justify-between px-4 md:px-6 lg:px-8">
-        <div className="flex items-center">
+        <div className="flex items-center ml-[-10px]">
           <img src="/assets/logo.png" alt="Logo" className="h-8 w-8 mr-1" />
           <div className="font-bold text-white text-xl pl-2 leading-normal">
             Lunex
