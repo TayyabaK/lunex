@@ -22,14 +22,14 @@ const Futurelenux = () => {
               style={{
                 lineHeight: "50px",
               }}
-              class="max-w-[750px] w-full font-archivo-medium font-medium text-white text-[16px] lg:text-lg mt-8"
+              class="max-w-[650px] w-full font-archivo-medium font-medium text-white text-[16px] lg:text-lg mt-8"
             >
               Corvus Is A Web3 Defi Crypto Exchange That Allows Users To Buy,
               Sell And Swap Cryptocurrency Instantly Via Our Non-custodial
               Crypto Application.
             </p>
           </div>
-          <div className="flex flex-col xl:gap-0 gap-[20px] justify-center sm:flex-row max-w-[680px] w-full mt-[60px] xl:justify-between">
+          <div className="flex flex-col xl:gap-0 gap-[20px] justify-center sm:flex-row max-w-[630px] w-full mt-[60px] xl:justify-between">
             <div className=" max-w-[250px] w-full h-16  mt-[-18px]">
               <button class="relative neon-border neon-shadow neon-hover px-6 py-3 bg-black text-white font-bold flex items-center transition-colors duration-300 ease-in-out">
                 <h1 className="[font-family:'Archivo-Bold',Helvetica] font-bold text-sm lg:text-lg flex">
@@ -71,15 +71,15 @@ const Futurelenux = () => {
       </div>
 
       <div>
-        <div className="max-w-[800px] w-full h-fit ">
+        <div className="max-w-[600px] w-full h-fit ">
           <div
-            className=" max-w-[800px] w-full h-fit border-1 border-solid border-[#34fcb4]"
+            className=" max-w-[480px] w-full h-fit bg-yellow-200 border-1 border-solid border-[#34fcb4]"
             style={{
               boxShadow: "6px 6px 0 black, 7px 7px 0 #34fcb4",
               color: "transparent",
             }}
           >
-            <div className="max-w-[800px] w-full h-fit border-[#34fcb4] border-[1px]">
+            <div className="max-w-[480px] w-full h-fit border-[#34fcb4] border-[1px]">
               <div className="">
                 <PreSale />
               </div>

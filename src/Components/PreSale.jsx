@@ -1,13 +1,12 @@
 "use client";
-import React, { useState , useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
 const PreSale = () => {
-
   const [clientSideData, setClientSideData] = useState(null);
 
   useEffect(() => {
-    setClientSideData('Dynamic Content');
+    setClientSideData("Dynamic Content");
   }, []);
   const [selectedPayment, setSelectedPayment] = useState("ETH");
 
@@ -68,17 +67,23 @@ const PreSale = () => {
         <div className="flex justify-between items-center">
           <span className="text-[12px]">
             1 LNX{" "}
-            <span className="font-semibold text-[#34fcb4]"> = $0.040 </span>
+            <span className="font-semibold text-[13px] text-[#34fcb4]">
+              {" "}
+              = $0.040{" "}
+            </span>
           </span>
           <span className="text-[12px]">
             NEXT STAGE PRICE{" "}
-            <span className="font-semibold text-[#34fcb4]"> = $0.058 </span>
+            <span className="font-semibold text-[13px] text-[#34fcb4]">
+              {" "}
+              = $0.058{" "}
+            </span>
           </span>
         </div>
         <div className="mt-6">
-          <div className="bg-transparent border-[1px] border-gray-700 rounded-md h-4 w-full">
+          <div className="bg-transparent border-[1px] border-[#212021] rounded-md h-4 w-full">
             <div
-              className="bg-[#34fcb4] rounded-[4px] h-4 w-4/5 text-[6px] pt-[3px] font-extrabold text-black px-[15px]"
+              className="bg-[#34fcb4] rounded-[4px] h-[15px] w-4/5 text-[6px] pt-[3px] font-extrabold text-black px-[15px]"
               style={{ width: "74.5%" }}
             >
               74.5%
@@ -116,7 +121,7 @@ const PreSale = () => {
                 : button.defaultBg
             } hover:bg-[#30ba87] text-${
               selectedPayment === button.label ? "black" : "#9e9e9e"
-            } py-[6px] md:px-[46px] px-4 rounded-[4px] mr-[5px]`}
+            } py-[6px] md:px-[46px] px-[16px] rounded-[4px] mr-[5px]`}
             onClick={() => setSelectedPayment(button.label)}
           >
             <span className="flex items-center text-black">
@@ -144,7 +149,7 @@ const PreSale = () => {
         <div className="mt-[3px] flex flex-row bg-white border border-gray-700 rounded-md w-full focus:outline-none focus:border-[#34fcb4]">
           <input
             type="text"
-            className="bg-white border-none text-black placeholder:text-[12px] rounded-md sm:py-[6px] sm:px-3 py-1 px-2 max-w-[83%] w-full focus:outline-none focus:border-[#34fcb4]"
+            className="bg-white border-none text-black placeholder:text-[10px] rounded-md sm:py-[6px] sm:px-3 py-1 px-2 max-w-[83%] w-full focus:outline-none focus:border-[#34fcb4]"
             placeholder="Enter Amount"
           />
           <button className="bg-[#34fcb4] sm:px-[15px] px-[8px] mt-[4px] mb-[4px] mr-[5px] rounded-md text-black text-[12px] font-semibold">
@@ -166,7 +171,7 @@ const PreSale = () => {
         <div className="mt-[3px] bg-white border border-gray-700 rounded-md w-full focus:outline-none focus:border-[#34fcb4]">
           <input
             type="text"
-            className="bg-white border text-black placeholder:text-[12px] border-gray-700 rounded-md sm:py-[6px] sm:px-3 py-1 px-2 w-full focus:outline-none focus:border-[#34fcb4]"
+            className="bg-white border text-black placeholder:text-[10px] border-gray-700 rounded-md sm:py-[6px] sm:px-3 py-1 px-2 w-full focus:outline-none focus:border-[#34fcb4]"
             placeholder="0"
           />
         </div>
