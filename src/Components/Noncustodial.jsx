@@ -3,7 +3,7 @@ import React from "react";
 const Noncustodial = () => {
   return (
     <div
-      className="bg-black flex justify-center pt-[70px]  mb-[50px]"
+      className="bg-black flex justify-center pt-[70px] relative  mb-[50px]"
       style={{
         background: "radial-gradient(circle 50vh at 0% 20%, #273b1d, black)",
       }}
@@ -48,6 +48,14 @@ const Noncustodial = () => {
               />
             </button>
           </div>
+        </div>
+
+        <div>
+          <img
+            src="/assets/custodial-screen2.svg"
+            alt="mob-border"
+            className="absolute inset-0 w-full h-full  object-fill px-[60px] pb-[20px] pt-[90px]"
+          />
         </div>
 
         <section>

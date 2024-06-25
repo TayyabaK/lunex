@@ -8,7 +8,12 @@ const Exchange = () => {
         background: "radial-gradient(circle 50vh at 0% 20%, #273b1d, black)",
       }}
     >
-      <div className=" max-w-[1300px] w-full p-[20px] flex lg:flex-row flex-col justify-center self-center md:justify-between ">
+      <div
+        className=" max-w-[1250px] w-full bg-cover pt-[2px]   bg-center flex lg:flex-row flex-col justify-center self-center md:justify-between "
+        style={{
+          backgroundImage: "url('/assets/3-mob-custodial.svg')",
+        }}
+      >
         <div className="p-[0px] max-w-[250px] w-full">
           <div className="relative w-full">
             {" "}
@@ -26,8 +31,8 @@ const Exchange = () => {
         </div>
 
         <div className="md:mt-[50px] mt-8 pr-[60px] ">
-          <div className="flex flex-row  md:mt-[55px]  h-[30px] max-w-[600px] w-full">
-            <p className="[font-family:'Archivo-Medium',Helvetica] font-medium text-transparent text-xl whitespace-nowrap">
+          <div className="flex flex-row  md:mt-[55px]  h-[20px] max-w-[600px] w-full">
+            <p className=" font-medium text-transparent text-sm whitespace-nowrap">
               <span className="text-[#34fcb4]">
                 {String.fromCharCode(47, 47)}
               </span>
@@ -37,10 +42,10 @@ const Exchange = () => {
               </span>
             </p>
           </div>
-          <div className="max-w-[620px] w-full [font-family:'Archivo-Bold',Helvetica] font-bold text-white lg:text-[60px] xl:text-[60px] text-[60px]">
+          <div className="max-w-[620px] w-full font-bold text-white lg:text-[60px] xl:text-[60px] text-[60px]">
             Exchange And Swap
           </div>
-          <p className="max-w-[620px] w-full [font-family:'Archivo-Medium',Helvetica] font-medium text-[#ffffffe6] text-[14px] mt-4">
+          <p className="max-w-[620px] w-full font-medium text-[#ffffffe6] text-[12px] mt-2">
             A limitless multi chain decentralized Exchange. over 50,000+
             currency pairs are supported. Simple, quick, no connect wallet,
             custody free
