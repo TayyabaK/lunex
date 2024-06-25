@@ -22,7 +22,7 @@ const Futurelenux = () => {
               style={{
                 lineHeight: "50px",
               }}
-              class="max-w-[650px] w-full font-archivo-medium font-medium text-white text-[16px] lg:text-lg mt-8"
+              class="max-w-[650px] w-full font-archivo-medium font-medium text-white text-[16px] lg:text-lg mt-[47px]"
             >
               Corvus Is A Web3 Defi Crypto Exchange That Allows Users To Buy,
               Sell And Swap Cryptocurrency Instantly Via Our Non-custodial
@@ -73,13 +73,13 @@ const Futurelenux = () => {
       <div>
         <div className="max-w-[600px] w-full h-fit ">
           <div
-            className=" max-w-[480px] w-full h-fit bg-yellow-200 border-1 border-solid border-[#34fcb4]"
+            className=" max-w-[440px] w-full h-fit border-1 border-solid border-[#34fcb4]"
             style={{
               boxShadow: "6px 6px 0 black, 7px 7px 0 #34fcb4",
               color: "transparent",
             }}
           >
-            <div className="max-w-[480px] w-full h-fit border-[#34fcb4] border-[1px]">
+            <div className="max-w-[440px] w-full h-fit border-[#34fcb4] border-[2px]">
               <div className="">
                 <PreSale />
               </div>

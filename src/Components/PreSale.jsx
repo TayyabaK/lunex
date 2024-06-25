@@ -48,10 +48,12 @@ const PreSale = () => {
               height={30}
             />
           </div>
-          <div className="font-bold text-white text-md ml-2">Lunex</div>
+          <div className="font-bold text-white text-[21px] ml-[10px]">
+            Lunex
+          </div>
         </div>
         <div className="flex items-center gap-[15px]">
-          <span className="text-sm">Presale Stage</span>
+          <span className="text-[11px] font-normal">Presale Stage</span>
           <div
             className=" font-bold text-[#34fcb4] text-[18.3px] text-center tracking-[0] leading-[normal]"
             style={{
@@ -62,17 +64,18 @@ const PreSale = () => {
           </div>
         </div>
       </div>
+      <div className="bg-[#212021] h-[1px] w-full mt-[7.5px]"></div>
 
-      <div className="mt-[15px]">
+      <div className="mt-[11px]">
         <div className="flex justify-between items-center">
-          <span className="text-[12px]">
+          <span className="text-[11px]">
             1 LNX{" "}
             <span className="font-semibold text-[13px] text-[#34fcb4]">
               {" "}
               = $0.040{" "}
             </span>
           </span>
-          <span className="text-[12px]">
+          <span className="text-[11px]">
             NEXT STAGE PRICE{" "}
             <span className="font-semibold text-[13px] text-[#34fcb4]">
               {" "}
@@ -80,10 +83,13 @@ const PreSale = () => {
             </span>
           </span>
         </div>
-        <div className="mt-6">
+
+        <div className="bg-[#212021] h-[1px] w-full mt-[7.5px]"></div>
+
+        <div className="mt-[11px]">
           <div className="bg-transparent border-[1px] border-[#212021] rounded-md h-4 w-full">
             <div
-              className="bg-[#34fcb4] rounded-[4px] h-[15px] w-4/5 text-[6px] pt-[3px] font-extrabold text-black px-[15px]"
+              className="bg-[#34fcb4] rounded-[3px] h-[15px] w-4/5 text-[6px] pt-[3px] font-extrabold text-black px-[12px]"
               style={{ width: "74.5%" }}
             >
               74.5%
@@ -93,7 +99,7 @@ const PreSale = () => {
       </div>
 
       <div className="mt-[12px]">
-        <div className="flex justify-between items-center border-[#e2e2e2] border-[0.3px] rounded-[3px] py-[2px] px-[15px]">
+        <div className="flex justify-between items-center border-[#848484] border-[0.3px] rounded-[3px] py-[4px] px-[15px]">
           <span className="font-normal text-[9px] text-[#e2e2e2]">
             USDT Raised:
           </span>
@@ -101,7 +107,7 @@ const PreSale = () => {
             $17,200,000
           </span>
         </div>
-        <div className="flex justify-between items-center mt-[3px] border-[#e2e2e2] border-[0.3px] rounded-[3px] py-[2px] px-[15px]">
+        <div className="flex justify-between items-center mt-[3px] border-[#848484] border-[0.3px] rounded-[3px] py-[4px] px-[15px]">
           <span className="font-normal text-[9px] text-[#e2e2e2]">
             Token Sold:
           </span>
@@ -149,7 +155,7 @@ const PreSale = () => {
         <div className="mt-[3px] flex flex-row bg-white border border-gray-700 rounded-md w-full focus:outline-none focus:border-[#34fcb4]">
           <input
             type="text"
-            className="bg-white border-none text-black placeholder:text-[10px] rounded-md sm:py-[6px] sm:px-3 py-1 px-2 max-w-[83%] w-full focus:outline-none focus:border-[#34fcb4]"
+            className="bg-white border-none text-black placeholder:text-[10px] rounded-[4px] py-[6px] sm:px-3  px-2 max-w-[83%] w-full focus:outline-none focus:border-[#34fcb4]"
             placeholder="Enter Amount"
           />
           <button className="bg-[#34fcb4] sm:px-[15px] px-[8px] mt-[4px] mb-[4px] mr-[5px] rounded-md text-black text-[12px] font-semibold">
@@ -171,14 +177,14 @@ const PreSale = () => {
         <div className="mt-[3px] bg-white border border-gray-700 rounded-md w-full focus:outline-none focus:border-[#34fcb4]">
           <input
             type="text"
-            className="bg-white border text-black placeholder:text-[10px] border-gray-700 rounded-md sm:py-[6px] sm:px-3 py-1 px-2 w-full focus:outline-none focus:border-[#34fcb4]"
+            className="bg-white border text-black placeholder:text-[10px] border-gray-700 rounded-[4px] py-[6px] sm:px-3  px-2 w-full focus:outline-none focus:border-[#34fcb4]"
             placeholder="0"
           />
         </div>
       </div>
 
       <div className="mt-2">
-        <button className="bg-[#34fcb4] hover:bg-[#30ba87] text-black font-bold py-2 px-6 rounded-md w-full">
+        <button className="bg-[#34fcb4] hover:bg-[#30ba87] text-[14px] text-black font-bold py-[8px] px-6 rounded-[4px] w-full">
           Connect Wallet
         </button>
       </div>
