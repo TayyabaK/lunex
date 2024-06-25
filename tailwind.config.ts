@@ -33,6 +33,7 @@ const config: Config = {
       backgroundPosition: {
         "top-left-half": "top left 0% 50%", // Start from top left, shift down by 50%
       },
+      
     },
   },
   plugins: [],
