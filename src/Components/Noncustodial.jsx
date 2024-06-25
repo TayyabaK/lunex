@@ -3,7 +3,7 @@ import React from "react";
 const Noncustodial = () => {
   return (
     <div
-      className="bg-black flex justify-center pt-[70px] relative  mb-[50px]"
+      className="bg-black flex justify-center pt-[70px] b-[10px] relative  mb-[50px] border-b-[0.25px] border-browngrey "
       style={{
         background: "radial-gradient(circle 50vh at 0% 20%, #273b1d, black)",
       }}

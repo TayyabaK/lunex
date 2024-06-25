@@ -11,6 +11,8 @@ import Noncustodial from "./Noncustodial";
 import EarnWhileHolding from "./EarnWhileHolding";
 import Decentralize from "./Decentralize";
 
+import PortfolioTracker from "./PortfolioTracker";
+
 const Frame = () => {
   return (
     <div>
@@ -22,6 +24,7 @@ const Frame = () => {
       <Exchange />
       <EarnWhileHolding/>
       <Noncustodial />
+      <PortfolioTracker/>
     </div>
   );
 };
