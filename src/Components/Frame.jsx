@@ -19,6 +19,8 @@ import RealUtility from "./RealUtility";
 
 import Tokenomics from "./Tokenomics";
 
+import Secure from "./Secure";
+
 const Frame = () => {
   return (
     <div>
@@ -34,6 +36,7 @@ const Frame = () => {
       <LunexCard/>
       <RealUtility/>
       <Tokenomics/>
+      <Secure/>
     </div>
   );
 };
