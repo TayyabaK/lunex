@@ -25,6 +25,8 @@ import LunexToken from "./LunexToken";
 
 import GiveAway from "./GiveAway";
 
+import Roadmap from "./Roadmap";
+
 const Frame = () => {
   return (
     <div>
@@ -43,6 +45,7 @@ const Frame = () => {
       <Secure/>
       <LunexToken/>
       <GiveAway/>
+      <Roadmap/>
     </div>
   );
 };
