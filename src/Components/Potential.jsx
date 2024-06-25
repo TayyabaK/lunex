@@ -14,20 +14,20 @@ const Potential = () => {
             </span>
           </div>
           <div className="flex-grow h-[2px] bg-[#34fcb4] mt-[60px]"></div>
-          <span className="text-white font-bold [font-family:'Archivo-Bold',Helvetica] lg:text-[50px] xl:text-[56px] text-[40px] flex items-center mt-4 sm:mt-0">
+          <span className="pt-[50px] text-white font-bold [font-family:'Archivo-Bold',Helvetica] lg:text-[50px] xl:text-[56px] text-[40px] flex items-center justify-center mt-4 sm:mt-0 sm:h-[60px]">
             Unlimited Potential
           </span>
         </div>
       </div>
       <div className="flex md:flex-row flex-col md:gap-0 gap-[20px] mt-[15px] self-center justify-center md:justify-center p-[20px]">
-        <div className="md:max-w-[250px] max-w-[760px] w-full justify-center border-[0.5px] border-gray-700 flex p-[20px] flex-col">
+        <div className="md:max-w-[250px] max-w-[760px] w-full justify-center border-[0.25px] border-browngrey flex p-[20px] flex-col">
           <img
             className="max-w-[100px] h-[150px] mb-[80px] w-full"
             src="/assets/secure.svg"
             alt="Secure"
           />
           <div className="">
-            <button className="px-[20px] text-[9px] py-[4px] tracking-wider hover:bg-[#34fcb4] hover:text-black text-white border-[1px] border-gray-600 rounded-sm">
+            <button className="px-[20px] text-[9px] py-[4px] tracking-wider hover:bg-[#34fcb4] hover:text-black text-white border-[0.25px] border-browngrey rounded-sm">
               TECHNOLOGY
             </button>
           </div>
@@ -41,14 +41,14 @@ const Potential = () => {
           </div>
         </div>
 
-        <div className="md:max-w-[250px] max-w-[760px] w-full justify-center border-[0.5px] border-gray-700 flex p-[20px] flex-col">
+        <div className="md:max-w-[250px] max-w-[760px] w-full justify-center border-[0.25px] border-browngrey flex p-[20px] flex-col">
           <img
             className="max-w-[75px] h-[150px] mb-[80px] w-full"
             src="/assets/troffee.svg"
             alt="Trophy"
           />
           <div className="">
-            <button className="px-[20px] text-[9px] py-[4px] tracking-wider hover:bg-[#34fcb4] hover:text-black text-white border-[1px] border-gray-600 rounded-sm">
+            <button className="px-[20px] text-[9px] py-[4px] tracking-wider hover:bg-[#34fcb4] hover:text-black text-white border-[0.25px] border-browngrey rounded-sm">
               ECOSYSTEM
             </button>
           </div>
@@ -62,14 +62,14 @@ const Potential = () => {
           </div>
         </div>
 
-        <div className="md:max-w-[250px] max-w-[760px] w-full justify-center border-[0.5px] border-gray-700 flex p-[20px] flex-col">
+        <div className="md:max-w-[250px] max-w-[760px] w-full justify-center border-[0.25px] border-browngrey flex p-[20px] flex-col">
           <img
             className="max-w-[100px] h-[150px] mb-[80px] w-full"
             src="/assets/weight.svg"
             alt="Weight"
           />
           <div className="">
-            <button className="px-[20px] text-[9px] py-[4px] tracking-wider hover:bg-[#34fcb4] hover:text-black text-white border-[1px] border-gray-600 rounded-sm">
+            <button className="px-[20px] text-[9px] py-[4px] tracking-wider hover:bg-[#34fcb4] hover:text-black text-white border-[0.25px] border-browngrey rounded-sm">
               AVAILABILITY
             </button>
           </div>
@@ -83,8 +83,8 @@ const Potential = () => {
           </div>
         </div>
 
-        <div className="md:max-w-[250px] max-w-[760px] w-full justify-center border-[0.5px] border-gray-700 flex p-[20px] flex-col">
-          <button className="hover:w-[450px]">
+        <div className="relative md:max-w-[250px] max-w-[760px] w-full justify-center border-[0.25px] border-browngrey flex p-[20px] flex-col">
+          <button className="hover:w-[600px] z-20">
             <img
               className="max-w-[250px] h-[150px] mb-[80px] w-full"
               src="/assets/governance.svg"
@@ -92,7 +92,7 @@ const Potential = () => {
             />
           </button>
           <div className="">
-            <button className="px-[30px] text-[9px] py-[4px] tracking-wider text-white hover:bg-[#34fcb4] hover:text-black border-[1px] border-gray-600 rounded-sm">
+            <button className="px-[30px] text-[9px] py-[4px] tracking-wider text-white hover:bg-[#34fcb4] hover:text-black border-[0.25px] border-browngrey rounded-sm">
               HONESTY
             </button>
           </div>
@@ -105,17 +105,23 @@ const Potential = () => {
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam
             </span>
+
+            <img
+              src="/assets/back-d.svg"
+              className="absolute left-0 top-[-30px] z-10"
+              style={{ height: '300px', width: '300px' }}
+            />
           </div>
         </div>
 
-        <div className="md:max-w-[250px] max-w-[760px] w-full justify-center border-[0.5px] border-gray-700 flex p-[20px] flex-col">
+        <div className="md:max-w-[250px] max-w-[760px] w-full justify-center border-[0.25px] border-browngrey flex p-[20px] flex-col">
           <img
             className="max-w-[140px] h-[150px] mb-[80px] w-full"
             src="/assets/window.svg"
             alt="Window"
           />
           <div className="">
-            <button className="px-[35px] text-[9px] py-[4px] tracking-wider hover:bg-[#34fcb4] hover:text-black text-white border-[1px] border-gray-600 rounded-sm">
+            <button className="px-[35px] text-[9px] py-[4px] tracking-wider hover:bg-[#34fcb4] hover:text-black text-white border-[0.25px] border-browngrey rounded-sm">
               TRUST
             </button>
           </div>
