@@ -17,6 +17,8 @@ import LunexCard from "./LunexCard";
 
 import RealUtility from "./RealUtility";
 
+import Tokenomics from "./Tokenomics";
+
 const Frame = () => {
   return (
     <div>
@@ -31,6 +33,7 @@ const Frame = () => {
       <PortfolioTracker/>
       <LunexCard/>
       <RealUtility/>
+      <Tokenomics/>
     </div>
   );
 };
