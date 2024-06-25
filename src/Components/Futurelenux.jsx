@@ -9,17 +9,16 @@ const Futurelenux = () => {
         background:
           "radial-gradient(circle 50vh at 10% 5%, #273b1d, transparent), radial-gradient(circle 50vh at 90% 5%, #273b1d, transparent), black",
       }}
-      className="md:p-[100px] p-[70px] flex md:flex-row flex-col justify-center xl:gap-[90px] lg:gap-[50px] gap-[50px]  border-b-[0.25px] border-browngrey "
+      className="md:p-[100px] p-[70px] flex md:flex-row flex-col justify-center xl:gap-[90px] lg:gap-[50px] gap-[50px] xl2:gap-[150px] border-b-[0.25px] border-browngrey "
     >
       <div>
         <div className="max-w-[700px]  w-full ">
           <div className="max-w-[700px] w-full font-bold text-transparent lg:text-[60px] xl:text-[72px] xl2:text-[80px] text-[56px] leading-none [font-family:'Archivo-Bold',Helvetica] tracking-[0] flex flex-col">
-            
             <div className="text-white my-[-5px]">Step Into the </div>
             <div className="text-white my-[-5px]">future with </div>
             <div className="text-[#34fcb4] my-[-5px]"> Lunex Network</div>
 
-            <div 
+            <div
               style={{
                 lineHeight: "50px",
               }}
@@ -32,8 +31,8 @@ const Futurelenux = () => {
           </div>
           <div className="flex flex-col xl:gap-0 gap-[20px] justify-center sm:flex-row max-w-[630px] w-full mt-[72px] lg:mt-[116px] xl:justify-between  border-b-[0.25px] border-browngrey">
             <div className=" max-w-[250px] w-full h-16  mt-[-18px]">
-              <button class="relative neon-border neon-shadow neon-hover px-6 py-3 bg-black text-white font-bold flex items-center transition-colors duration-300 ease-in-out">
-                <h1 className="[font-family:'Archivo-Bold',Helvetica] font-bold text-sm lg:text-lg flex">
+              <button class="relative neon-border neon-shadow neon-hover w-48 h-12 bg-black font-bold flex items-center justify-center transition-colors duration-300 ease-in-out">
+                <h1 class="[font-family:'Archivo-Bold',Helvetica] font-bold text-sm lg:text-lg flex">
                   JOIN PRESALE
                 </h1>
                 <img
