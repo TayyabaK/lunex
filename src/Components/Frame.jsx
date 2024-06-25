@@ -27,6 +27,8 @@ import GiveAway from "./GiveAway";
 
 import Roadmap from "./Roadmap";
 
+import FAQ from "./Faq";
+
 const Frame = () => {
   return (
     <div>
@@ -46,6 +48,7 @@ const Frame = () => {
       <LunexToken/>
       <GiveAway/>
       <Roadmap/>
+      <FAQ/>
     </div>
   );
 };
