@@ -2,7 +2,7 @@ import React from "react";
 
 const Potential = () => {
   return (
-    <div className="bg-black">
+    <div className="bg-black mx-[100px]">
       <div>
         <div className="flex flex-col sm:flex-row gap-[10px] sm:gap-[25px] px-[70px] justify-center items-center">
           <div className="flex items-center mt-[60px]">
