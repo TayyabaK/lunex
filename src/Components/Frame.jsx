@@ -9,6 +9,7 @@ import Exchange from "./Exchange";
 import Noncustodial from "./Noncustodial";
 
 import EarnWhileHolding from "./EarnWhileHolding";
+import Decentralize from "./Decentralize";
 
 const Frame = () => {
   return (
@@ -16,6 +17,7 @@ const Frame = () => {
       <Futurelenux />
       <Brand />
       <WhatIsLunex />
+      <Decentralize/>
       <Potential />
       <Exchange />
       <EarnWhileHolding/>
