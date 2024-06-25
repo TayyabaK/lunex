@@ -4,7 +4,7 @@ const RealUtility = () => {
   return (
     <div className="bg-black text-white py-16 px-32">
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold mb-2 text-[#34fcb4]">Real Utility</h2>
+        <h2 className="text-[50px] font-bold mb-2 text-[#34fcb4]">Real Utility</h2>
         <h1 className="text-4xl font-bold mb-4">The $LNEX Token</h1>
         <p className="text-lg mb-6">
           Corvus: A Web3 DeFi Crypto Exchange That Allows Users To Buy, Sell And

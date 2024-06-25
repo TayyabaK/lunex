@@ -13,7 +13,7 @@ const Navbar = () => {
 
   const tabs = [
     { name: "ECOSYSTEM", label: "ECOSYSTEM", page: "/" },
-    { name: "WIN", label: "WIN $500K", page: "/Frame1" },
+    { name: "WIN", label: "WIN $500K", page: "/" },
     { name: "MEDIA", label: "MEDIA", page: "/" },
     { name: "HOW_TO_BUY", label: "HOW TO BUY", page: "/Howtobuy" },
     { name: "CALCULATOR", label: "CALCULATOR", page: "/Calculator" },
