@@ -13,6 +13,8 @@ import Decentralize from "./Decentralize";
 
 import PortfolioTracker from "./PortfolioTracker";
 
+import LunexCard from "./LunexCard";
+
 const Frame = () => {
   return (
     <div>
@@ -25,6 +27,7 @@ const Frame = () => {
       <EarnWhileHolding/>
       <Noncustodial />
       <PortfolioTracker/>
+      <LunexCard/>
     </div>
   );
 };
