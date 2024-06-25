@@ -15,6 +15,8 @@ import PortfolioTracker from "./PortfolioTracker";
 
 import LunexCard from "./LunexCard";
 
+import RealUtility from "./RealUtility";
+
 const Frame = () => {
   return (
     <div>
@@ -28,6 +30,7 @@ const Frame = () => {
       <Noncustodial />
       <PortfolioTracker/>
       <LunexCard/>
+      <RealUtility/>
     </div>
   );
 };
