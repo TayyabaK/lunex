@@ -254,8 +254,11 @@ const Navbar = () => {
               </div>
             )}
           </div>
-          <button className="bg-black border-[#34FCB4] border-[1px] px-4 py-2 hover:bg-[#34FCB4] hover:border-white hover:text-black transition duration-300 ease-in-out">
-            BUY $LUNAX
+          <button className="relative neon-border py-2 px-8 flex items-center text-white font-bold transition-colors duration-300 ease-in-out hover:bg-[#34fcb4] hover:text-black">
+            <span className="absolute left-0 ml-[-12px] flex items-center justify-center w-5 h-5 bg-black border border-white rounded-full neon-circle">
+              <span className="w-2 h-2 bg-[#34fcb4] rounded-full"></span>
+            </span>
+            <span>BUY $LUNAX</span>
           </button>
         </div>
       )}
