@@ -8,6 +8,8 @@ import Potential from "./Potential";
 import Exchange from "./Exchange";
 import Noncustodial from "./Noncustodial";
 
+import EarnWhileHolding from "./EarnWhileHolding";
+
 const Frame = () => {
   return (
     <div>
@@ -16,6 +18,7 @@ const Frame = () => {
       <WhatIsLunex />
       <Potential />
       <Exchange />
+      <EarnWhileHolding/>
       <Noncustodial />
     </div>
   );

@@ -38,9 +38,7 @@ const Noncustodial = () => {
 
           <div className="max-w-[620px] w-full flex flex-row gap-[20px] mt-[55px]">
             <button class="relative neon-border neon-shadow neon-hover px-6 py-3 bg-black font-bold flex items-center transition-colors duration-300 ease-in-out">
-              <h1 className=" font-bold text-sm lg:text-lg flex">
-                BUY PRESALE
-              </h1>
+              <h1 className=" font-bold text-sm lg:text-lg flex">STAKE </h1>
               <img
                 className="ml-2 w-4 h-2"
                 alt="Group"
