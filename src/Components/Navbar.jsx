@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <div className="bg-black text-white py-8 mr-[64px]  ml-[44px] border-b-[0.25px] border-browngrey relative z-index-0">
-      <div className="container  w-full mx-auto flex items-center justify-between px-4 md:px-6 lg:px-8">
+      <div className="container w-full mx-auto flex items-center justify-between px-4 md:px-6 lg:px-8">
         <Link href="/">
           <div className="flex items-center ml-[-10px]">
             <img src="/assets/logo.png" alt="Logo" className="h-8 w-8 mr-1" />
@@ -35,7 +35,7 @@ const Navbar = () => {
             </div>
           </div>
         </Link>
-        <div className="hidden md:flex flex-grow justify-center space-x-10 lg:space-x-10">
+        <div className="hidden xl:flex flex-grow justify-center space-x-10 lg:space-x-10">
           {tabs.map((tab) => (
             <Link href={tab.page} key={tab.name}>
               <div
@@ -66,7 +66,7 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
-        <div className="hidden md:flex items-center space-x-4 lg:space-x-10">
+        <div className="hidden xl:flex items-center space-x-4 lg:space-x-10">
           <div
             className="relative flex items-center cursor-pointer"
             onClick={() => setDropdownOpen(!dropdownOpen)}
@@ -130,7 +130,7 @@ const Navbar = () => {
             <span>BUY $LUNAX</span>
           </button>
         </div>
-        <div className="md:hidden flex items-center">
+        <div className="xl:hidden flex items-center">
           <button onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? (
               <svg
@@ -165,36 +165,38 @@ const Navbar = () => {
         </div>
       </div>
       {menuOpen && (
-        <div className="md:hidden mt-4 flex flex-col items-center space-y-4">
+        <div className="xl:hidden mt-4 flex flex-col items-center space-y-4">
           {tabs.map((tab) => (
-            <div
-              key={tab.name}
-              className={`px-4 py-2 cursor-pointer flex items-center text-sm ${
-                selectedTab === tab.name ? "text-[#34FCB4] relative" : ""
-              }`}
-              onClick={() => {
-                setSelectedTab(tab.name);
-                setMenuOpen(false);
-              }}
-            >
-              <span
-                className={`h-4 w-4 flex items-center justify-center rounded-full mr-2 border ${
-                  selectedTab === tab.name
-                    ? "bg-black border-white"
-                    : "bg-black border-white"
+            <Link key={tab.name} href={tab.page}>
+              <div
+                key={tab.name}
+                className={`px-4 py-2 cursor-pointer flex items-center text-sm ${
+                  selectedTab === tab.name ? "text-[#34FCB4] relative" : ""
                 }`}
+                onClick={() => {
+                  setSelectedTab(tab.name);
+                  setMenuOpen(false);
+                }}
               >
                 <span
-                  className={`h-2 w-2 rounded-full ${
-                    selectedTab === tab.name ? "bg-[#34FCB4]" : ""
+                  className={`h-4 w-4 flex items-center justify-center rounded-full mr-2 border ${
+                    selectedTab === tab.name
+                      ? "bg-black border-white"
+                      : "bg-black border-white"
                   }`}
-                ></span>
-              </span>
-              {tab.label}
-              {selectedTab === tab.name && (
-                <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#34FCB4] transform translate-y-1/2"></span>
-              )}
-            </div>
+                >
+                  <span
+                    className={`h-2 w-2 rounded-full ${
+                      selectedTab === tab.name ? "bg-[#34FCB4]" : ""
+                    }`}
+                  ></span>
+                </span>
+                {tab.label}
+                {selectedTab === tab.name && (
+                  <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#34FCB4] transform translate-y-1/2"></span>
+                )}
+              </div>
+            </Link>
           ))}
           <div
             className="relative flex items-center cursor-pointer"
