@@ -21,6 +21,8 @@ import Tokenomics from "./Tokenomics";
 
 import Secure from "./Secure";
 
+import LunexToken from "./LunexToken";
+
 const Frame = () => {
   return (
     <div>
@@ -37,6 +39,7 @@ const Frame = () => {
       <RealUtility/>
       <Tokenomics/>
       <Secure/>
+      <LunexToken/>
     </div>
   );
 };

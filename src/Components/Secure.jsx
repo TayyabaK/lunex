@@ -2,12 +2,7 @@ import React from "react";
 
 const Secure = () => {
   return (
-    <div
-      className="relative bg-black w-full h-full flex justify-center py-[100px] relative border-[0.25px] border-browngrey "
-      style={{
-        background: "radial-gradient(circle 50vh at 90% 20%, #273b1d, black)",
-      }}
-    >
+    <div className="relative bg-black w-full h-full flex justify-center py-[100px] relative border-[0.25px] border-browngrey ">
       <div
         className=" max-w-[1300px] bg-cover pb-[90px] pt-[32px] bg-center w-full p-[7px] flex justify-between lg:flex-row flex-col  "
         style={{
@@ -56,7 +51,7 @@ const Secure = () => {
           </div>
         </div>
 
-         <div className="absolute top-[250px] left-[850px] bg-transparent text-white p-8 flex flex-col md:flex-row items-start md:items-center gap-6">
+        <div className="absolute top-[250px] left-[850px] bg-transparent text-white p-8 flex flex-col md:flex-row items-start md:items-center gap-6">
           <div className="flex flex-col text-xl mb-2">
             <div className="flex items-center mb-2">
               <span className="text-[#34fcb4] font-bold mr-2">
@@ -89,7 +84,6 @@ const Secure = () => {
         </div>
       </div>
     </div>
-    
   );
 };
 
