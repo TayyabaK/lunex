@@ -23,6 +23,8 @@ import Secure from "./Secure";
 
 import LunexToken from "./LunexToken";
 
+import GiveAway from "./GiveAway";
+
 const Frame = () => {
   return (
     <div>
@@ -40,6 +42,7 @@ const Frame = () => {
       <Tokenomics/>
       <Secure/>
       <LunexToken/>
+      <GiveAway/>
     </div>
   );
 };
