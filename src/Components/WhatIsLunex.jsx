@@ -2,7 +2,13 @@ import React from "react";
 
 const WhatIsLunex = () => {
   return (
-    <div className=" md:p-[50px] p-[70px] flex md:flex-row flex-col justify-center xl:gap-[90px] lg:gap-[50px] gap-[50px] xl2:gap-[150px] border-b-[0.25px] border-browngrey ">
+    <div
+      className=" md:p-[50px] p-[70px] flex md:flex-row flex-col justify-center xl:gap-[90px] lg:gap-[50px] gap-[50px] xl2:gap-[150px] border-b-[0.25px] border-browngrey "
+      style={{
+        background:
+          " radial-gradient(circle 42vh at 75% 60%, #273b1d, transparent), black",
+      }}
+    >
       <div className="max-w-[1300px] w-full justify-center gap-[100px] flex flex-row">
         <div className="max-w-[800px] w-full ">
           <div className="max-w-[750px]  w-full [font-family:'Archivo-Bold',Helvetica] font-bold text-white lg:text-[60px] xl:text-[80px] text-[60px]">
