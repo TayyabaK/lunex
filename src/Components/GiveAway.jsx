@@ -2,13 +2,15 @@ import React from "react";
 
 const GiveAway = () => {
   return (
-    <div className="relative bg-black w-full h-full flex justify-center relative border-[0.25px] border-browngrey ">
+    <div className="relative my-12 bg-black w-full h-full flex justify-center border-[0.25px] border-browngrey ">
       <img
         className="w-full h-full bg-cover bg-center flex justify-between lg:flex-row flex-col  "
         src="/assets/giveaway.svg"
       />
-      <div className="absolute top-[90px] left-[630px] max-w-[500px] bg-transparent text-white py-16 px-8 flex flex-col items-start">
-        <h1 className="text-4xl font-bold mb-4">Join The Giveaway</h1>
+      <div className="absolute left-[630px] max-w-[500px] bg-transparent text-white px-8 flex flex-col items-start">
+        <h1 className="font-bold text-[78px] leading-none mb-4">
+          Join The Giveaway
+        </h1>
         <p className="text-lg mb-4">
           <span className="text-[#34fcb4] font-bold">
             {String.fromCharCode(47, 47)} The Giveaway Amount:{" "}
