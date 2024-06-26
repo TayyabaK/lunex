@@ -21,7 +21,7 @@ const Footer = () => {
             <span className="text-[60px] font-bold pl-8 pt-4">LUNEX</span>
           </div>
 
-          <button className="relative neon-border neon-shadow neon-hover mx-12 px-16 py-3  bg-black font-bold flex items-center transition-colors duration-300 ease-in-out">
+          <button className="relative neon-border neon-shadow neon-hover mx-12 px-16 py-2 ml-12  bg-black font-bold flex items-center transition-colors duration-300 ease-in-out">
             <span className="[font-family:'Archivo-Bold',Helvetica] font-bold text-sm lg:text-lg">
               SECURE
             </span>
@@ -70,7 +70,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="absolute flex flex-row ml-[800px] mt-[165px]">
+        <div className="absolute flex flex-row ml-[800px] mt-[140px]">
           <p className=" [font-family:'Archivo-Medium',Helvetica] font-medium text-transparent text-lg  whitespace-nowrap">
             <span className="text-[#34fcb4]">
               {String.fromCharCode(47, 47)}
@@ -102,18 +102,18 @@ const Footer = () => {
           </href>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto mt-8 flex flex-row items-start text-gray-500 text-sm">
-        <p className="flex-1 mt-6 mb-4 md:mb-0 max-w-[700px] ml-12">
+      <div className="max-w-7xl mx-auto flex flex-row items-start text-gray-500 text-sm">
+        <p className="flex-1 mb-4 md:mb-0 mt-8 max-w-[650px] ml-28">
           Disclaimer: Digital currencies may be unregulated in your
           jurisdiction. The value of digital currencies may go down as well as
           up. Profits may be subject to capital gains or other taxes applicable
           in your jurisdiction.
         </p>
         <div className="flex flex-row ">
-          <a href="#" className="hover:text-white mt-6 mb-4 md:mb-0 ml-12">
+          <a href="#" className="hover:text-white mt-8  mb-4 md:mb-0 ml-8">
             Privacy
           </a>
-          <a href="#" className="hover:text-white mt-6 mb-4 md:mb-0 ml-[20px]">
+          <a href="#" className="hover:text-white mt-8  mb-4 md:mb-0 ml-20">
             Terms & Conditions
           </a>
         </div>
