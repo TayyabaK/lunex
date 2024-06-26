@@ -86,7 +86,7 @@ const phases = [
 const Roadmap = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedPhase, setSelectedPhase] = useState(null);
-  const phasesToShow = 6; // Number of phases to show at once
+  const phasesToShow = 5; // Number of phases to show at once
 
   const handleNext = () => {
     if (currentIndex + phasesToShow < phases.length) {
@@ -118,7 +118,7 @@ const Roadmap = () => {
         {String.fromCharCode(47, 47)}
         <span className="text-white">Roadmap</span>
       </h2>
-      <div className="flex overflow-x-auto border-t border-b border-browngrey borer-[0.25px] py-8 space-x-0 scrollbar-hide">
+      <div className="flex overflow-x-auto border-t border-b border-browngrey py-8 scrollbar-hide justify-center">
         {phases.slice(currentIndex, currentIndex + phasesToShow).map((phaseInfo, index) => {
           const globalIndex = currentIndex + index;
           return (
