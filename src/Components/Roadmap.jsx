@@ -110,7 +110,7 @@ const Roadmap = () => {
         {" "}
         {String.fromCharCode(47, 47)} Roadmap
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 border-t border-b border-gray-600 py-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 border-t border-b border-browngrey borer-[0.25px] py-8">
         {phases
           .slice(currentIndex, currentIndex + phasesToShow)
           .map((phaseInfo, index) => {
@@ -118,10 +118,10 @@ const Roadmap = () => {
             return (
               <div
                 key={globalIndex}
-                className={`p-4 border ${
+                className={`p-4 border-[0.25px] ${
                   selectedPhase === globalIndex
                     ? "border-[#34fcb4]"
-                    : "border-gray-600"
+                    : "border-browngrey"
                 } rounded-md relative`}
                 onClick={() => handlePhaseSelect(globalIndex)}
               >

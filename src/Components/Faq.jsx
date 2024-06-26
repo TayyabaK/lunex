@@ -46,13 +46,15 @@ const FAQ = () => {
       </div>
       <div className="max-w-5xl mx-auto">
         {faqs.map((faq, index) => (
-          <div key={index} className="border-b border-gray-700">
+          <div key={index} className="border-b border-browngrey">
             <div
-              className="flex justify-between items-center py-4 cursor-pointer"
+              className={`flex justify-between items-center py-4 cursor-pointer ${
+                activeIndex === index ? "bg-[#201f20]" : ""
+              }`}
               onClick={() => toggleFAQ(index)}
             >
               <h3 className="text-lg font-semibold">{faq.question}</h3>
-              <span className="flex items-center justify-center w-2 h-2 bg-green-500 rounded-full">
+              <span className="flex items-center justify-center text-sm text-green-500">
                 {activeIndex === index ? "-" : "+"}
               </span>
             </div>
