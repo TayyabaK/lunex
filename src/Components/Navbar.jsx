@@ -40,7 +40,7 @@ const Navbar = () => {
             <Link href={tab.page} key={tab.name}>
               <div
                 key={tab.name}
-                className={`px-4 py-2 cursor-pointer flex items-center text-xs font-bold ${
+                className={`px-4 py-2 cursor-pointer flex items-center text-sm font-bold ${
                   selectedTab === tab.name ? "text-[#34FCB4] relative" : ""
                 }`}
                 onClick={() => setSelectedTab(tab.name)}
