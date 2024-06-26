@@ -33,22 +33,26 @@ const Frame = () => {
   return (
     <div>
       <Futurelenux />
-      <Brand />
+      <section id="media">
+        <Brand />
+      </section>
       <WhatIsLunex />
-      <Decentralize/>
+      <Decentralize />
       <Potential />
       <Exchange />
-      <EarnWhileHolding/>
+      <EarnWhileHolding />
       <Noncustodial />
-      <PortfolioTracker/>
-      <LunexCard/>
-      <RealUtility/>
-      <Tokenomics/>
-      <Secure/>
-      <LunexToken/>
-      <GiveAway/>
-      <Roadmap/>
-      <FAQ/>
+      <PortfolioTracker />
+      <LunexCard />
+      <RealUtility />
+      <Tokenomics />
+      <Secure />
+      <LunexToken />
+      <section id="giveaway">
+        <GiveAway />
+      </section>
+      <Roadmap />
+      <FAQ />
     </div>
   );
 };

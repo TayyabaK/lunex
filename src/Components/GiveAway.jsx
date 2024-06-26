@@ -8,7 +8,7 @@ const GiveAway = () => {
         src="/assets/giveaway.svg"
       />
       <div className="absolute left-[630px] max-w-[500px] bg-transparent text-white px-8 flex flex-col items-start">
-        <h1 className="font-bold text-[78px] leading-none mb-4">
+        <h1 className="font-bold text-[60px] leading-none mb-4">
           Join The Giveaway
         </h1>
         <p className="text-lg mb-4">
@@ -24,7 +24,7 @@ const GiveAway = () => {
           to buy, sell and swap cryptocurrency instantly via our non-custodial
           crypto application.
         </p>
-        <button className="relative neon-border neon-shadow neon-hover px-8 py-3 bg-black font-bold flex items-center transition-colors duration-300 ease-in-out mt-8">
+        <button className="relative neon-border neon-shadow neon-hover px-8 py-3 mt-14 bg-black font-bold flex items-center transition-colors duration-300 ease-in-out mt-8">
           <span className="[font-family:'Archivo-Bold',Helvetica] font-bold text-sm lg:text-lg">
             JOIN THE GIVEAWAY
           </span>
