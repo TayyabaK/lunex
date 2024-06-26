@@ -54,7 +54,7 @@ const FAQ = () => {
               onClick={() => toggleFAQ(index)}
             >
               <h3 className="text-lg font-semibold">{faq.question}</h3>
-              <span className="flex items-center justify-center text-sm text-green-500">
+              <span className="flex items-center justify-center text-lg text-green-500 mr-4">
                 {activeIndex === index ? "-" : "+"}
               </span>
             </div>
