@@ -50,21 +50,28 @@ const Futurelenux = () => {
                 <span className="text-[#ffffffe6]"> Socials</span>
               </p>
 
-              <img
-                className=" max-w-[20px] w-full h-[20px]"
-                alt="Group"
-                src="/assets/VectorX-1.png"
-              />
-              <img
-                className=" max-w-[25px] w-full h-[20px] "
-                alt="Group"
-                src="/assets/Vectordiscord-5.png"
-              />
-              <img
-                className=" max-w-[20px] w-full h-[20px] "
-                alt="Group"
-                src="/assets/Vectorplane-3.png"
-              />
+              <href className="cursor-pointer">
+                <img
+                  className=" max-w-[20px] w-full h-[20px]"
+                  alt="Group"
+                  src="/assets/VectorX-1.png"
+                />
+              </href>
+              <href className="cursor-pointer">
+                <img
+                  className=" max-w-[25px] w-full h-[20px] "
+                  alt="Group"
+                  src="/assets/Vectordiscord-5.png"
+                />
+              </href>
+
+              <href className="cursor-pointer">
+                <img
+                  className=" max-w-[20px] w-full h-[20px] "
+                  alt="Group"
+                  src="/assets/Vectorplane-3.png"
+                />
+              </href>
             </div>
           </div>
         </div>
