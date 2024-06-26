@@ -26,7 +26,7 @@ const RealUtility = () => {
         <div className="p-6 border border-gray-700 text-left ">
           <div className="flex flex-row pb-4">
             <img src="/assets/cross-icon.svg" />
-            <h3 className="text-lg font-bold text-[#34fcb4] px-2">
+            <h3 className="text-md font-bold text-white px-2">
               Early Access
             </h3>
           </div>
@@ -40,7 +40,7 @@ const RealUtility = () => {
         <div className="p-6 border border-gray-700 text-left ">
           <div className="flex flex-row pb-4">
             <img src="/assets/cross-icon.svg" />
-            <h3 className="text-lg font-bold text-[#34fcb4] px-2">
+            <h3 className="text-md font-bold text-white px-2">
               Disocunted Tokens
             </h3>
           </div>
@@ -54,7 +54,7 @@ const RealUtility = () => {
         <div className="p-6 border border-gray-700 text-left ">
           <div className="flex flex-row pb-4">
             <img src="/assets/cross-icon.svg" />
-            <h3 className="text-lg font-bold text-[#34fcb4] px-2">
+            <h3 className="text-md font-bold text-white px-2">
               Priority Support
             </h3>
           </div>
@@ -68,7 +68,7 @@ const RealUtility = () => {
         <div className="p-6 border border-gray-700 text-left">
           <div className="flex flex-row pb-4">
             <img src="/assets/cross-icon.svg" />
-            <h3 className="text-lg font-bold text-[#34fcb4] px-2">
+            <h3 className="text-md font-bold text-white px-2">
               Insider Tokens
             </h3>
           </div>

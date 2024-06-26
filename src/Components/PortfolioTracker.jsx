@@ -25,7 +25,7 @@ const PortfolioTracker = () => {
               Get Wealthier And Achieve Your Investment Goals With Our Dynamic
               Portfolio Tracker All From One App
             </p>
-            <ol className="text-left list-decimal list-inside space-y-2 mb-6">
+            <ol className="text-left  text-[12px] list-decimal list-inside space-y-2 mb-6">
               <li>
                 Track Your Wallets, Exchange Accounts And Other Assets Such As
                 Stocks.
