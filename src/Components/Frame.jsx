@@ -63,7 +63,6 @@ const Frame = () => {
         <GiveAway />
       </section>
       <Roadmap />
-      <FAQ />
       {showButton && (
         <button
           onClick={scrollToTop}
