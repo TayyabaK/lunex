@@ -20,6 +20,16 @@ const config: Config = {
   content: ["./src/**/*.{html,js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      utilities: {
+        ".scrollbar-hide": {
+          "-ms-overflow-style": "none" /* IE and Edge */,
+          "scrollbar-width": "none" /* Firefox */,
+          "&::-webkit-scrollbar": {
+            display: "none" /* Chrome, Safari, and Opera */,
+          },
+        },
+      },
+
       colors: {
         browngrey: "#2D2C2D",
       },
@@ -33,11 +43,10 @@ const config: Config = {
       backgroundPosition: {
         "top-left-half": "top left 0% 50%", // Start from top left, shift down by 50%
       },
-        screens: {
-        'xl2': '1420px', // Custom breakpoint for screens larger than 1420px
-        'xm': '768px',
+      screens: {
+        xl2: "1420px", // Custom breakpoint for screens larger than 1420px
+        xm: "768px",
       },
-      
     },
   },
   plugins: [],

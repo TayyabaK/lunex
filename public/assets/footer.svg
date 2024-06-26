@@ -1,14 +1,16 @@
-<svg width="1912" height="667" viewBox="0 0 1912 667" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M191.5 0V667" stroke="#2D2C2D"/>
-<path d="M1766.5 0V667" stroke="#2D2C2D"/>
-<path d="M821.5 0V521" stroke="#2D2C2D"/>
-<path d="M1136.5 0V667" stroke="#2D2C2D"/>
-<path d="M1451.5 0V667" stroke="#2D2C2D"/>
-<path d="M1575.5 0V521" stroke="#2D2C2D"/>
-<path d="M1521.5 0V521" stroke="#2D2C2D"/>
-<path d="M1645.5 0V521" stroke="#2D2C2D"/>
-<path d="M1696.5 0V521" stroke="#2D2C2D"/>
-<path d="M0.5 344H1928.5" stroke="#2D2C2D"/>
-<path d="M0.5 521H1928.5" stroke="#2D2C2D"/>
-<path d="M0.5 273H1928.5" stroke="#2D2C2D"/>
+<svg width="1912" height="668" viewBox="0 0 1912 668" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M506.5 1.08398V522.084" stroke="#2D2C2D"/>
+<path d="M0.5 1.08398H1928.5" stroke="#2D2C2D"/>
+<path d="M191.5 1V668" stroke="#2D2C2D"/>
+<path d="M1766.5 1V668" stroke="#2D2C2D"/>
+<path d="M821.5 1V522" stroke="#2D2C2D"/>
+<path d="M1136.5 1V668" stroke="#2D2C2D"/>
+<path d="M1451.5 1V668" stroke="#2D2C2D"/>
+<path d="M1575.5 1V522" stroke="#2D2C2D"/>
+<path d="M1521.5 1V522" stroke="#2D2C2D"/>
+<path d="M1645.5 1V522" stroke="#2D2C2D"/>
+<path d="M1696.5 1V522" stroke="#2D2C2D"/>
+<path d="M0.5 345H1928.5" stroke="#2D2C2D"/>
+<path d="M0.5 522H1928.5" stroke="#2D2C2D"/>
+<path d="M0.5 274H1928.5" stroke="#2D2C2D"/>
 </svg>

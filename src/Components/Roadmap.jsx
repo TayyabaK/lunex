@@ -105,65 +105,83 @@ const Roadmap = () => {
   };
 
   return (
-    <div className="bg-black text-white py-16 px-32">
-      <h2 className="text-3xl font-bold mb-8 text-[#34fcb4]">
+    <div
+      className="bg-black text-white py-16 px-32 z-10 w-full bg-cover bg-center"
+      style={{
+        backgroundImage: "url('/assets/roadmap-back.svg')",
+        backgroundSize: "100%",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <h2 className="text-[48px] font-bold mb-8 text-[#34fcb4] z-20">
         {" "}
-        {String.fromCharCode(47, 47)} Roadmap
+        {String.fromCharCode(47, 47)}
+        <span className="text-white">Roadmap</span>
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 border-t border-b border-browngrey borer-[0.25px] py-8">
-        {phases
-          .slice(currentIndex, currentIndex + phasesToShow)
-          .map((phaseInfo, index) => {
-            const globalIndex = currentIndex + index;
-            return (
-              <div
-                key={globalIndex}
-                className={`p-4 border-[0.25px] ${
-                  selectedPhase === globalIndex
-                    ? "border-[#34fcb4]"
-                    : "border-browngrey"
-                } rounded-md relative`}
-                onClick={() => handlePhaseSelect(globalIndex)}
-              >
-                <div className="flex items-center mb-4">
-                  <div
-                    className={`flex items-center justify-center w-4 h-4 bg-black border border-white rounded-full neon-circle ${
-                      selectedPhase === globalIndex ? "bg-[#34fcb4]" : ""
-                    }`}
-                  >
-                    {selectedPhase === globalIndex && (
-                      <span className="w-2 h-2 bg-[#34fcb4] rounded-full"></span>
-                    )}
-                  </div>
-                  <h3 className="text-lg font-bold text-[#34fcb4] ml-2">
-                    {phaseInfo.phase}
-                  </h3>
+      <div className="flex overflow-x-auto border-t border-b border-browngrey borer-[0.25px] py-8 space-x-0 scrollbar-hide">
+        {phases.slice(currentIndex, currentIndex + phasesToShow).map((phaseInfo, index) => {
+          const globalIndex = currentIndex + index;
+          return (
+            <div
+              key={globalIndex}
+              className={`p-4 border-[0.25px] flex-none w-[200px] ${
+                selectedPhase === globalIndex
+                  ? "border-[#34fcb4]"
+                  : "border-browngrey"
+              } relative bg-black`}
+              onClick={() => handlePhaseSelect(globalIndex)}
+            >
+              <div className="flex items-center mb-4">
+                <div
+                  className={`flex items-center justify-center w-4 h-4 bg-black border border-white rounded-full neon-circle ${
+                    selectedPhase === globalIndex ? "bg-[#34fcb4]" : ""
+                  }`}
+                >
+                  {selectedPhase === globalIndex && (
+                    <span className="w-2 h-2 bg-[#34fcb4] rounded-full"></span>
+                  )}
                 </div>
-                <ul className="list-disc pl-5 space-y-2 text-sm">
-                  {phaseInfo.tasks.map((task, idx) => (
-                    <li key={idx}>{task}</li>
-                  ))}
-                </ul>
+                <h3 className="text-lg font-bold text-[#34fcb4] ml-2">
+                  {phaseInfo.phase}
+                </h3>
               </div>
-            );
-          })}
+              <ul className="list-disc pl-5 space-y-2 text-sm">
+                {phaseInfo.tasks.map((task, idx) => (
+                  <li key={idx}>{task}</li>
+                ))}
+              </ul>
+            </div>
+          );
+        })}
       </div>
-      <div className="flex justify-between mt-8">
+      <div className="flex mt-8 justify-end space-x-40">
         <button
           onClick={handleBack}
           disabled={currentIndex === 0}
+          className="flex flex-row items-center disabled:opacity-50"
         >
-          <span className="[font-family:'Archivo-Bold',Helvetica] font-bold text-sm lg:text-lg">
+          <img
+            className="ml-2 w-6 h-4 pt-2"
+            alt="Arrow"
+            src="/assets/left-arrow.svg"
+          />
+          <span className="ml-2 [font-family:'Archivo-Bold',Helvetica] font-bold text-sm lg:text-lg">
             BACK
           </span>
         </button>
         <button
+          className="flex flex-row items-center disabled:opacity-50"
           onClick={handleNext}
           disabled={currentIndex + phasesToShow >= phases.length}
         >
           <span className="[font-family:'Archivo-Bold',Helvetica] font-bold text-sm lg:text-lg">
             NEXT
           </span>
+          <img
+            className="ml-2 w-6 h-4 pt-2"
+            alt="Arrow"
+            src="/assets/right-arrow.svg"
+          />
         </button>
       </div>
     </div>
