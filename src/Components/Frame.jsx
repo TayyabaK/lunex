@@ -52,7 +52,6 @@ const Frame = () => {
         <GiveAway />
       </section>
       <Roadmap />
-      <FAQ />
     </div>
   );
 };
